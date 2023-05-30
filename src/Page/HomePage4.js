@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "../components/Form";
-import { FaGithub, FaLinkedin, FaTwitter, FaVoicemail } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { AiFillGitlab, AiOutlineMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 function HomePage4() {
@@ -26,7 +26,7 @@ function HomePage4() {
               <a
                 className="contact-text-content-1-content"
                 href="mailto:ashishsoni2002@gmail.com"
-                target="_blank"
+                target="__blank"
               >
                 ashishsoni2002@gmail.com
               </a>
@@ -37,7 +37,7 @@ function HomePage4() {
             <a
               className="contact-text-content-1-content"
               href="tel:9660688940"
-              target="_blank"
+              target="__blank"
             >
               9660688940
             </a>
@@ -57,6 +57,9 @@ function HomePage4() {
             </a>
             <a href="https://github.com/ashishsoniii" target="__blank">
               <FaGithub />
+            </a>
+            <a href="https://gitlab.torproject.org/ashishsoniii"  target="__blank">
+              <AiFillGitlab/>
             </a>
           </div>
         </div>

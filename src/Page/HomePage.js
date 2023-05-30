@@ -19,9 +19,9 @@ function HomePage() {
       <div className="homepage-main">
         <div className="hp-left">
           <div className="ashish-txt">Ashish Soni</div>
-          <div className="nav tp">
-            <div className="nav-btn">
-              <a href="/" className="nav-btn-link">
+          <div className="nav tp ">
+            <div className="nav-btn bg-hover-white">
+              <a href="/" className="nav-btn-link bg-hover-white">
                 Web Developer
               </a>
             </div>
@@ -43,7 +43,7 @@ function HomePage() {
       {/* Section 2 */}
       <div className="homeSection2">
         {Skills.map((btn, index) => (
-          <div className="nav2 tp">
+          <div className="nav2 tp ">
             <div className="nav-btn3" key={index}>
               <h1 className="nav-btn-link3">{btn.text}</h1>
             </div>
