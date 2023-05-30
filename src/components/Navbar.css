@@ -1,0 +1,98 @@
+.nav {
+    justify-content: flex-start;
+    display: flex;
+    /* border-style: double; */
+}
+
+.nav-btn {
+    margin: 0.7rem 2rem;
+    padding: 0.7rem 10rem 0.7rem 2rem;
+    fill: aliceblue;
+    border-radius: 7rem;
+    border: 2px solid #debbbb;
+    /* background-color: #a21111; */
+    cursor: pointer;
+    display: inline;
+    /* border-style: double; */
+    justify-content: flex-start;
+    display: flex;
+    font-size: 1.1rem;
+
+
+}
+
+.nav-btn-2 {
+    margin: 0.7rem 1rem;
+    padding: 0.7rem 10rem .7rem 0rem;
+    fill: aliceblue;
+    border-radius: 7rem;
+    /* border: 2px solid #debbbb; */
+    /* background-color: #a21111; */
+    font-weight: 700;
+    font-size: 1rem;
+    /* cursor: pointer; */
+    display: inline;
+    /* border-style: double; */
+    justify-content: flex-start;
+    display: flex;
+
+
+}
+
+.manage-margin-card {
+    margin: 1.7rem 1rem;
+    padding: 0.7rem 2rem .7rem 1rem;
+}
+
+.nav-btn:hover {
+    background-color: #181d21;
+    cursor: pointer;
+    border-style: double;
+
+
+}
+
+.nav-btn-link {
+
+    color: White;
+    font-size: 1.3em;
+    background-color: #181d2100;
+    text-decoration: none;
+    /* transparent h */
+
+}
+
+.nav-btn-link2 {
+
+    color: White;
+    font-size: 1.3em;
+    background-color: #181d2100;
+    text-decoration: none;
+    /* transparent h */
+    cursor: default;
+
+}
+
+.nav-btn-link:hover {
+
+
+    background-color: #181d21;
+    color: White;
+    /* font-size: 1.3em; */
+
+}
+
+.tp {
+    background-color: #debbbb00;
+    /* margin: 8.7rem -2rem 3rem; */
+    /* padding: 0.7rem 5rem 1.7rem 2rem; */
+    /* justify-content: flex-end; */
+
+}
+
+/* btn at homepage2 */
+
+.small-lnk {
+    font-size: 1.1rem;
+}
+
