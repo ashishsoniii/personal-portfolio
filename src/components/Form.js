@@ -40,11 +40,11 @@ function Form() {
       isValid = false;
     }
 
-    if (!form.current.elements.email.value.trim()) {
+    if (!form.current.elements.email_em.value.trim()) {
       errors.email = "Email is required";
       isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(form.current.elements.email.value)) {
-      errors.email = "Invalid email address";
+    } else if (!/\S+@\S+\.\S+/.test(form.current.elements.email_em.value)) {
+      errors.email_em = "Invalid email address";
       isValid = false;
     }
 
@@ -74,7 +74,7 @@ function Form() {
           placeholder="Email"
           name="email_em"
         />
-        {errors.email && <p className="error-message">{errors.email}</p>}
+        {errors.email_em && <p className="error-message">{errors.email_em}</p>}
         <textarea
           name="message_msg"
           id="msg"
