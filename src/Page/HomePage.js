@@ -19,8 +19,11 @@ function HomePage() {
       <div className="homepage-main">
         <div className="hp-left">
           <div className="ashish-txt">Ashish Soni</div>
-          <div className="nav tp ">
-            <div className="nav-btn bg-hover-white">
+          <div className=" ashish-txt mobile-only">
+            I code Website!
+          </div>
+          <div className="nav tp hide-mobile ">
+            <div className="nav-btn bg-hover-white ">
               <a href="/" className="nav-btn-link bg-hover-white">
                 Web Developer
               </a>
@@ -32,7 +35,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="hp-right">
+        <div className="hp-right img-correction">
           <PhotoRound />
         </div>
       </div>
@@ -42,15 +45,18 @@ function HomePage() {
       {/* Section 2 */}
       {/* Section 2 */}
       <div className="homeSection2">
+      <div className="homes-div-res">
+
         {Skills.map((btn, index) => (
-          <div className="nav2 tp ">
+          <div className="nav2 tp " key={index} >
             <div className="nav-btn3" key={index}>
               <h1 className="nav-btn-link3">{btn.text}</h1>
             </div>
           </div>
         ))}
+      </div>
         <div className="hp-right hs2">
-          <div>
+          <div className="hp-text-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
             dolore facilis dicta <br /> veniam ad corrupti ratione in
             cupiditate.

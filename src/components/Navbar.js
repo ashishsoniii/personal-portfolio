@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <>
       <div className="nav">
-        <div className="nav-btn bg-hover-grey">
+        <div className="nav-btn mrgn-nav bg-hover-grey">
           <div className="nav-wrap-icon bg-hover-grey">
             <div className="nav-icon-add bg-hover-grey">
               {" "}

@@ -353,7 +353,7 @@ h2 {
 .hp-projects {
     margin-top: 4%;
     margin-left: 4%;
-    width: 23rem;
+    /* width: 23rem; */
     height: 15rem;
 }
 
@@ -603,8 +603,9 @@ h2 {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 800;
     /* margin-bottom: 1rem; */
-    color: #cbcbcb;;
-   
+    color: #cbcbcb;
+    ;
+
 
 }
 
@@ -622,8 +623,9 @@ h2 {
 .mail-icon {
     /* padding-top: 1rem; */
     padding-right: 2rem;
-    
+
 }
+
 .contact-text-content-1-content {
     margin-top: 4%;
     /* margin-left: 14%; */
@@ -655,6 +657,619 @@ h2 {
     font-size: 2.5rem;
 }
 
-.contact-text-content{
+.contact-text-content {
     margin-top: 15%;
+}
+
+
+.homes-div-res {
+    display: flex;
+}
+
+
+.firstTwo {
+    display: flex;
+}
+
+
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+/* Responsivesness */
+
+
+@media (max-width: 1409px) {
+
+    .hp-projects {
+        height: 20rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 1380px) {
+
+    .hp-text-text {
+        font-size: 1.2rem;
+    }
+
+    .HomePage2 {
+        margin-left: 0rem
+    }
+
+    .contact-text-content-1-content {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1282px) {
+
+    .hp2-card1-img {
+        width: 27rem;
+    }
+}
+
+@media (max-width: 1271px) {
+
+    .nav-btn {
+        padding: 0.3rem 3rem 0.3rem 1rem
+    }
+}
+
+@media (max-width: 1218px) {
+
+    .hp-text-text {
+        font-size: 1rem;
+    }
+
+    .homepage-main {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    * {
+        .hp4Form {
+            min-width: 2rem;
+        }
+    }
+
+}
+
+@media (max-width: 1136px) {
+
+    .nav-btn {
+        padding: 0.3rem 3rem 0.3rem 1rem
+    }
+
+    .mrgn-nav {
+        margin-left: 6%
+    }
+}
+
+@media (max-width: 1097px) {
+
+    .hp-text-text {
+        font-size: 0.8rem;
+    }
+
+    .hp2-card1-img {
+        width: 25rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 1097px) {
+
+    .hp2-card2 {
+        margin-left: 3%;
+        /* min-width: 2rem; */
+    }
+}
+
+
+
+@media (max-width: 1040px) {
+    .hp3-card-heading {
+        font-size: 1rem;
+    }
+
+    .hp3-card-content {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 988px) {
+
+    .hp2-card1 {
+        min-width: 2rem;
+    }
+
+    .homeSection2 {
+        font-size: 0.8rem;
+        display: block;
+    }
+
+    .HomePage2 {
+        margin-left: 0rem
+    }
+
+    .hp-right {
+        position: relative;
+        margin-top: 2%;
+    }
+
+    .img-correction {
+        position: absolute;
+    }
+
+
+    .form-heading {
+        margin-top: 4%;
+        margin-left: 14%;
+        font-size: 1.6rem
+    }
+
+    .transparent-input {
+        font-size: 1rem;
+    }
+
+    .transparent-input-textarea {
+        font-size: 1rem;
+    }
+
+    .form-button-sbmt {
+        margin-top: 0rem;
+        margin-left: 0%;
+        border: none;
+        border-radius: 1.4rem;
+        background-color: #7b0f05;
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem 1.9rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        outline: none;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 800;
+        /* padding-right: 8rem; */
+    }
+}
+
+@media (max-width: 930px) {
+    .hp2-card1-img {
+        width: 23rem;
+        height: 9rem;
+    }
+}
+
+@media (max-width: 910px) {
+    .nav-btn {
+        padding: 0.3rem 1rem 0.3rem 1rem;
+    }
+
+    .img-round {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .ashish-txt {
+        font-size: 5rem;
+    }
+
+    .nav-btn-link {
+        font-size: 1.1rem;
+    }
+
+    .hp2-card1-img {
+        width: 19rem;
+        height: 8rem;
+    }
+}
+
+@media (max-width: 827px) {
+
+    .hp2-card2 {
+        margin-left: 1%;
+        min-width: 2rem;
+    }
+
+    .card2-text {
+        margin: 0rem;
+        margin-left: 2.5%;
+        ;
+    }
+
+
+}
+
+@media (max-width: 763px) {
+
+    .firstTwo {
+        display: block;
+    }
+
+    .hp3-card {
+        margin-top: 2%;
+    }
+
+    .hp3-card-heading {
+        font-size: 1.4rem;
+        margin-top: 7%;
+    }
+
+    .hp3-card-content {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 763px) {
+    .HomePage2 {
+        display: block;
+        margin-bottom: 20rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 763px) {
+    .mrgn-nav {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 744px) {
+
+    .contact-text-heading {
+        font-size: 1.7rem;
+    }
+
+    .contact-text-content-1-content {
+        font-size: 1rem;
+    }
+
+    .mail-icon {
+        font-size: 1.2rem;
+    }
+
+    .social-icons a svg {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 704px) {
+
+    .nav-btn {
+        padding: 0.3rem 1rem 0.3rem 1rem;
+
+    }
+
+    .nav-btn-link {
+        font-size: 0.9rem;
+    }
+
+    .ashish-txt {
+        font-size: 3.5rem;
+    }
+}
+
+
+@media (max-width: 690px) {
+
+    .hp4 {
+        display: block;
+    }
+
+    .hp4Form {
+        margin-left: 5%;
+        margin-top: 9%;
+        max-width: 80%;
+        max-height: 20rem;
+        position: relative;
+    }
+
+    .contact-text-heading {
+        font-size: 2.5rem;
+    }
+
+    .contact-text-content-1-content {
+        font-size: 1.8rem;
+    }
+
+    .mail-icon {
+        font-size: 1.8rem;
+    }
+
+    .social-icons a svg {
+        font-size: 2rem;
+    }
+
+    .social-icons {
+        margin-left: 0rem;
+    }
+
+
+
+
+
+    .form-heading {
+        margin-top: 4%;
+        margin-left: 14%;
+        font-size: 2.3rem
+    }
+
+    .transparent-input {
+        font-size: 1.3rem;
+    }
+
+    .transparent-input-textarea {
+        font-size: 1.3rem;
+    }
+
+    .form-button-sbmt {
+        margin-top: 1rem;
+
+    }
+
+}
+
+
+@media (max-width: 659px) {
+
+    .nav-btn {
+        /* padding: 0rem 1rem 0rem 1rem; */
+        margin: 0.6rem 0.8rem
+    }
+
+    .nav-btn-link {
+        font-size: 0.7rem;
+    }
+
+    .bg-hover-grey svg {
+        font-size: 1rem;
+    }
+
+    /* .ashish-txt{
+        font-size: 3.5rem;
+    } */
+
+    .hp2-card1 {
+        margin-top: 11%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .hp2-card2 {
+        margin-top: 7%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .marign-adjust {
+        margin-top: 23%;
+    }
+}
+
+@media (max-width: 590px) {
+
+    /* .nav-btn {
+        padding: 0.3rem 1rem 0.3rem 1rem;
+
+    }
+    .nav-btn-link{
+        font-size: 0.9rem;
+    } */
+    .ashish-txt {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 563px) {
+
+    .homeSection2 {
+        margin-left: 2rem;
+    }
+
+    .homes-div-res {
+        display: flex;
+        font-size: 1.2em;
+        font-family: monospace;
+        overflow: hidden;
+        /* border: 1px solid; */
+        resize: horizontal;
+        justify-content: center;
+        margin-bottom: 7%;
+    }
+
+    .nav2 {
+        min-height: 1.2rem;
+        display: block;
+        white-space: wrap;
+    }
+
+
+
+}
+
+@media (max-width: 519px) {
+    .homepage3 {
+        display: block;
+        margin-right: 2%;
+    }
+
+
+}
+
+
+@media (max-width: 690px) {
+    .contact-text-content-1-content {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 537px) {
+
+    .homepage-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hp-left {
+        position: relative;
+        /* background: #F48024; */
+        /* width:576px; */
+        /* height: 324px; */
+    }
+
+    .hp-right {
+        position: relative;
+        /* background: #EFF0F1; */
+        /* width:576px; */
+        /* height: 324px; */
+    }
+
+    .homepage-main {
+        /* justify-content: space-between; */
+        /* display: block; */
+    }
+
+    .hp-left {
+        order: 2;
+    }
+
+    .hp-right {
+        order: 1;
+        /* padding-left: 4rem; */
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+
+    .mobile-only {
+        display: contents;
+        font-size: 1.4rem;
+    }
+
+    .ashish-txt {
+        padding-left: 0rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 519px) {
+    .nav-btn-link3 {
+        font-size: 0.47rem;
+    }
+
+    .nav-btn3 {
+        border: 1px solid #debbbb;
+        padding: 0rem 0.3rem 0rem 0.3rem
+    }
+
+    .homepage3 {
+        margin-left: 4%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 519px) {
+
+    .nav-icon-add {
+
+        margin-right: 0.5rem;
+
+    }
+
+    .mrgn-nav {
+        margin-left: 9%;
+    }
+}
+
+@media (max-width: 455px) {
+
+
+    .mrgn-nav {
+        margin-left: 3%;
+    }
+}
+
+@media (max-width: 422px) {
+
+
+    .mrgn-nav {
+        margin-left: 0%;
+    }
+
+    .nav-icon-add {
+
+        margin-right: 0rem;
+
+    }
+}
+
+
+@media (max-width: 760px) {
+    .hp2-card1-img {
+        width: 80%;
+        height: 100%;
+    }
+}
+@media (max-width: 386px) {
+    
+    .nav-btn-link {
+        font-size: 0.6rem;
+    }
+    .bg-hover-grey svg {
+        font-size: 0.8rem;
+    }
+    
+    
+}
+@media (max-width: 356px) {
+.nav-btn {
+    /* padding: 0rem 1rem 0rem 1rem; */
+    margin: 1rem 0.3rem;
+}
+}
+
+@media (max-width: 311px) {
+    .HomePage2 {
+        margin-top: 40%;
+    }
+
+
 }
