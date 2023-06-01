@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence, useScroll } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "./Page.css";
 import PhotoRound from "../components/PhotoRound";
 import HomePage2 from "./HomePage2";
