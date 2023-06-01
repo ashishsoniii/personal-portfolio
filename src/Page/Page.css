@@ -83,6 +83,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: 2rem;
 }
 
 /* Section 2 on HomePage */
@@ -172,7 +173,7 @@ h2 {
     display: flex;
     flex-direction: row;
     /* align-items: center; */
-    margin-top: 3%;
+    margin-top: 8%;
     margin-left: 3%;
     min-height: 6rem;
     border-radius: 4rem;
@@ -876,6 +877,7 @@ h2 {
 
     .ashish-txt {
         font-size: 5rem;
+        
     }
 
     .nav-btn-link {
@@ -1133,6 +1135,7 @@ h2 {
 
 .mobile-only {
     display: none;
+
 }
 
 @media (max-width: 537px) {
@@ -1145,6 +1148,9 @@ h2 {
 
     .hp-left {
         position: relative;
+        
+    margin-bottom: 2rem;
+
         /* background: #F48024; */
         /* width:576px; */
         /* height: 324px; */
@@ -1178,11 +1184,15 @@ h2 {
 
     .mobile-only {
         display: contents;
-        font-size: 1.4rem;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .homepage-main{
+        background-image: linear-gradient(#e15757, yellow);
     }
 
     .ashish-txt {
-        padding-left: 0rem;
+        padding-left: 3rem;
     }
 
 }
@@ -1207,6 +1217,10 @@ h2 {
 }
 
 @media (max-width: 519px) {
+
+    .homepage3-heading {
+        margin-top: 11%;
+        margin-left: 6.3%;}
 
     .nav-icon-add {
 

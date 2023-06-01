@@ -1,15 +1,22 @@
 import React from "react";
 import imgCard1 from "../assets/gsoc.png";
+import { motion } from "framer-motion";
 
 function Card1() {
   return (
     <>
       <div className="nav tp ">
-        <div className="nav-btn manage-margin-card">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }} // Initial state of the component
+          animate={{ opacity: 1, scale: 0.9 }} // Animation to be applied
+          transition={{ duration: 0.3 }} // Transition configuration
+          whileHover={{ scale: 1 }} // Animation on hover
+          className="nav-btn manage-margin-card"
+        >
           <a href="/" className="nav-btn-link small-lnk">
             Google Summer Of Code @ The Tor Project
           </a>
-        </div>
+        </motion.div>
       </div>
       {/* <div className="heading">My Blogs</div> */}
 

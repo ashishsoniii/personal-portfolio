@@ -1,12 +1,18 @@
 import React from "react";
 import Hp3projectCard1 from "../components/Hp3projectCard1";
+import { motion } from "framer-motion";
 
 function HomePage3() {
   return (
     <>
       <div className="homepage3-heading">Projects</div>
-      <section className="homepage3">
-        <div className="firstTwo">
+      <motion.section
+        // initial={{ opacity: 0, x: 100 }}
+        // whileInView={{ opacity: 1, x: 10 }}
+        // transition={{ duration:  }} // Transition configuration
+        className="homepage3"
+      >
+        <motion.div className="firstTwo">
           <Hp3projectCard1
             heading="No Limits Fitness Gym App"
             link="/lik"
@@ -17,8 +23,8 @@ function HomePage3() {
             link="/lik"
             backgroundColor="hp3-bg-yellow"
           />
-        </div>
-        <div className="firstTwo">
+        </motion.div>
+        <motion.div className="firstTwo">
           <Hp3projectCard1
             heading="DineYog"
             link="/lik"
@@ -29,8 +35,8 @@ function HomePage3() {
             link="/lik"
             backgroundColor="hp3-bg-green"
           />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </>
   );
 }
