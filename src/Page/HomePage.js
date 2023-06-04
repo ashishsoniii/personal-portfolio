@@ -41,7 +41,7 @@ function HomePage() {
                 // className="nav-btn bg-hover-white "
               > */}
               <button class="glow-on-hover" type="button">
-                Web Developer!
+                Web Developer
               </button>
 
               {/* </motion.div> */}
@@ -119,19 +119,20 @@ function HomePage() {
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           // animate={{ opacity: 1, y: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: -66 }}
           transition={{ duration: 3 }}
-          exit={{ opacity: 0, y: -550 }}
+          exit={{ opacity: 0, y: -250 }}
         >
           <HomePage2 />
         </motion.div>
       </AnimatePresence>
+
       <AnimatePresence>
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 300 }}
           // animate={{ opacity: 1, y: 50 }}
           // initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 47 }}
           transition={{ duration: 2 }}
           exit={{ opacity: 0, y: -500 }}
         >
@@ -143,7 +144,7 @@ function HomePage() {
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           // animate={{ opacity: 1, y: 0 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 40 }}
           transition={{ duration: 2 }}
           exit={{ opacity: 0, y: -500 }}
         >

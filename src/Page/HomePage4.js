@@ -58,8 +58,11 @@ function HomePage4() {
             <a href="https://github.com/ashishsoniii" target="__blank">
               <FaGithub />
             </a>
-            <a href="https://gitlab.torproject.org/ashishsoniii"  target="__blank">
-              <AiFillGitlab/>
+            <a
+              href="https://gitlab.torproject.org/ashishsoniii"
+              target="__blank"
+            >
+              <AiFillGitlab />
             </a>
           </div>
         </div>
