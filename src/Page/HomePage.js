@@ -32,25 +32,26 @@ function HomePage() {
             <div className=" ashish-txt mobile-only">
               Designing and developing the web of tomorrow!
             </div>
-            <div className="nav tp hide-mobile ">
-              <motion.div
+            <div className=" hide-mobile ">
+              {/* <motion.div
                 initial={{ opacity: 0, scale: 0.9 }} // Initial state of the component
                 animate={{ opacity: 1, scale: 1 }} // Animation to be applied
                 transition={{ duration: 0.3 }} // Transition configuration
                 whileHover={{ scale: 1.1 }} // Animation on hover
-                className="nav-btn bg-hover-white "
-              >
-                <a href="/" className="nav-btn-link bg-hover-white">
-                  Web Developer
-                </a>
-              </motion.div>
+                // className="nav-btn bg-hover-white "
+              > */}
+              <button class="glow-on-hover" type="button">
+                Web Developer!
+              </button>
+
+              {/* </motion.div> */}
               <div className="nav-btn-2 tp">
                 <a
                   href="/"
                   className="nav-btn-link2"
                   style={{ color: "black" }}
                 >
-                  Lorem Ipsum
+                  Building modern, mobile-first websites <br/> that make a lasting impression!
                 </a>
               </div>
             </div>
@@ -107,7 +108,8 @@ function HomePage() {
           // whileHover={{ scale: 1.3 }} // Animation on hover
         >
           <div className="hp-text-text">
-            Turning design visions into seamless and responsive web experiences <br/>
+            Turning design visions into seamless and responsive web experiences{" "}
+            <br />
             that captivate and engage users across devices.
           </div>
         </motion.div>
