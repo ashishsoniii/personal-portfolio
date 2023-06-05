@@ -695,7 +695,7 @@ h2 {
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -732,12 +732,20 @@ h2 {
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
-.hide-mobile{
+.hide-mobile {
     background: transparent;
     margin-left: 2rem;
     display: flex;
@@ -877,9 +885,10 @@ h2 {
 
 @media (max-width: 988px) {
 
-    .nav-btn-link2{
+    .nav-btn-link2 {
         display: none;
     }
+
     .hp2-card1 {
         min-width: 2rem;
     }
@@ -954,7 +963,7 @@ h2 {
 
     .ashish-txt {
         font-size: 5rem;
-        
+
     }
 
     .nav-btn-link {
@@ -1008,7 +1017,7 @@ h2 {
     .HomePage2 {
         display: block;
         margin-bottom: 20rem;
-        margin-top: 4rem;
+        margin-top: 7rem;
     }
 }
 
@@ -1226,8 +1235,8 @@ h2 {
 
     .hp-left {
         position: relative;
-        
-    margin-bottom: 2rem;
+
+        margin-bottom: 2rem;
 
         /* background: #F48024; */
         /* width:576px; */
@@ -1259,6 +1268,7 @@ h2 {
         display: flex;
         margin-left: -0.5rem;
     }
+
     .nav-btn-2 {
         display: none;
     }
@@ -1269,7 +1279,8 @@ h2 {
         font-size: 1rem;
         margin: 1rem;
     }
-    .homepage-main{
+
+    .homepage-main {
         background-image: linear-gradient(#e15757, yellow);
     }
 
@@ -1302,7 +1313,8 @@ h2 {
 
     .homepage3-heading {
         margin-top: 11%;
-        margin-left: 6.3%;}
+        margin-left: 6.3%;
+    }
 
     .nav-icon-add {
 
@@ -1344,22 +1356,25 @@ h2 {
         height: 100%;
     }
 }
+
 @media (max-width: 386px) {
-    
+
     .nav-btn-link {
         font-size: 0.6rem;
     }
+
     .bg-hover-grey svg {
         font-size: 0.8rem;
     }
-    
-    
+
+
 }
+
 @media (max-width: 356px) {
-.nav-btn {
-    /* padding: 0rem 1rem 0rem 1rem; */
-    margin: 1rem 0.3rem;
-}
+    .nav-btn {
+        /* padding: 0rem 1rem 0rem 1rem; */
+        margin: 1rem 0.3rem;
+    }
 }
 
 @media (max-width: 311px) {
