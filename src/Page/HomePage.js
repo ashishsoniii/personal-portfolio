@@ -38,8 +38,13 @@ function HomePage() {
                 Web Developer
               </button>
               <div className="nav-btn-2 tp">
-                <a href="/" className="nav-btn-link2" style={{ color: "black" }}>
-                  Building modern, mobile-first websites that make a lasting impression!
+                <a
+                  href="/"
+                  className="nav-btn-link2"
+                  style={{ color: "black" }}
+                >
+                  Building modern, mobile-first websites that make a lasting
+                  impression!
                 </a>
               </div>
             </div>
@@ -77,11 +82,12 @@ function HomePage() {
         </div>
         <motion.div
           className="hp-right hs2"
-          initial={{ opacity: 0, scale: 0.9, y: 0 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
+          initial={{ opacity: 0, scale: 1, y: 0 }}
+          animate={{ opacity: 1, scale: 1, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.3 }}
+          whileHover={{ scale: 1 }}
         >
           <div className="hp-text-text">
             Turning design visions into seamless and responsive web experiences
@@ -106,9 +112,9 @@ function HomePage() {
       {/* Section 4 */}
       <AnimatePresence>
         <motion.div
-          initial={{ opacity: 0, y: 300 }}
-          whileInView={{ opacity: 1, y: 10 }}
-          transition={{ duration: 2 }}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
           // exit={{ opacity: 0, y: -500 }}
         >
           <HomePage3 />
@@ -118,10 +124,10 @@ function HomePage() {
       {/* Section 5 */}
       <AnimatePresence>
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 130 }}
-          transition={{ duration: 2 }}
-          exit={{ opacity: 0, y: -500 }}
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 40 }}
+          transition={{ duration: 1 }}
+          exit={{ opacity: 0, y: 50 }}
         >
           <HomePage4 />
         </motion.div>

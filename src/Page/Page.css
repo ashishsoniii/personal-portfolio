@@ -989,6 +989,7 @@ h2 {
     .nav-btn-link {
         font-size: 1.1rem;
     }
+   
 
     .hp2-card1-img {
         width: 19rem;
@@ -997,6 +998,11 @@ h2 {
 }
 
 @media (max-width: 883px) {
+
+    .small-lnk{
+        font-size: 1.8rem ;
+
+    }
 
     .hp2-card2 {
         margin-left: 1%;
@@ -1077,6 +1083,10 @@ h2 {
     .nav-btn-link {
         font-size: 0.9rem;
     }
+    .small-lnk{
+        font-size: 1.8rem ;
+
+    }
 
     .ashish-txt {
         font-size: 3.5rem;
@@ -1154,6 +1164,10 @@ h2 {
     .nav-btn-link {
         font-size: 0.7rem;
     }
+    .small-lnk{
+        font-size: 1.4rem ;
+
+    }
 
     .bg-hover-grey svg {
         font-size: 1rem;
@@ -1189,6 +1203,12 @@ h2 {
 
 @media (max-width: 590px) {
 
+    .small-lnk{
+        font-size: 1.3rem ;
+
+    }}
+@media (max-width: 590px) {
+
     /* .nav-btn {
         padding: 0.3rem 1rem 0.3rem 1rem;
 
@@ -1204,7 +1224,7 @@ h2 {
 @media (max-width: 563px) {
 
     .homeSection2 {
-        margin-left: 2rem;
+        margin-left: 0rem;
     }
 
     .homes-div-res {
@@ -1224,6 +1244,10 @@ h2 {
         white-space: wrap;
     }
 
+    .small-lnk{
+        font-size: 1.1rem ;
+
+    }
 
 
 }
@@ -1322,7 +1346,7 @@ h2 {
 
 @media (max-width: 519px) {
     .nav-btn-link3 {
-        font-size: 0.47rem;
+        font-size: 0.8rem;
     }
 
     .nav-btn3 {
@@ -1385,6 +1409,9 @@ h2 {
 }
 
 @media (max-width: 386px) {
+    .nav-btn-link3 {
+        font-size: 0.6rem;
+    }
 
     .nav-btn-link {
         font-size: 0.6rem;
@@ -1393,8 +1420,14 @@ h2 {
     .bg-hover-grey svg {
         font-size: 0.8rem;
     }
+    .small-lnk{
+        font-size: 0.8rem ;
 
-
+    }
+    .hp2-card2
+    {
+        height: 26rem;
+    }
 }
 
 @media (max-width: 356px) {
@@ -1403,11 +1436,21 @@ h2 {
         margin: 1rem 0.3rem;
     }
 }
+@media (max-width: 325px) {
+    .bg-hover-grey svg {
+        font-size: 0.5rem;
+    }
+    .nav-btn-link {
+        font-size: 0.5rem;
+    }
 
+}
 @media (max-width: 311px) {
     .HomePage2 {
         margin-top: 40%;
     }
-
-
+    .nav-btn-link3 {
+        font-size: 0.5rem;
+    }
+    
 }
