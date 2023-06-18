@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-function Hp3projectCard1({ heading, link, backgroundColor , content ,Skills }) {
+function Hp3projectCard1({ heading, link, backgroundColor, content, Skills }) {
   // const Skills = [
   //   {  text: "React" },
   //   {  text: "HTML" },
@@ -29,8 +29,8 @@ function Hp3projectCard1({ heading, link, backgroundColor , content ,Skills }) {
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              whileInView={{ opacity: 1}}
-              exit={{ opacity: 0}}
+              whileInView={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               whileHover={{ scale: 1.2 }}
             >
@@ -41,13 +41,10 @@ function Hp3projectCard1({ heading, link, backgroundColor , content ,Skills }) {
           ))}
         </div>
 
-
-        <div className={`hp3-card-content ${backgroundColor}`}>
-          {content}
-        </div>
-        <div className={`hp3-card-link ${backgroundColor}`}>
+        <div className={`hp3-card-content ${backgroundColor}`}>{content}</div>
+        {/* <div className={`hp3-card-link ${backgroundColor}`}>
           <a href={link}>Sample Website Link</a>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

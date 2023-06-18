@@ -32,11 +32,12 @@ function Card2() {
           <div className="card2-text-content">
           Enhancing project frontends, building impactful landing pages, and delivering exceptional user experiences through skilled frontend development across multiple projects. <br />
             <br />
+            {/* todo */}
             <a
               href="https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia"
               target="__blank"
             >
-              Link to Project
+              {/* Link to Project */}
             </a>
           </div>
         </div>
