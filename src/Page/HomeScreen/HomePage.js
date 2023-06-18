@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Page.css";
-import PhotoRound from "../components/PhotoRound";
+import PhotoRound from "./components/PhotoRound";
 import HomePage2 from "./HomePage2";
 import HomePage3 from "./HomePage3";
 import HomePage4 from "./HomePage4";

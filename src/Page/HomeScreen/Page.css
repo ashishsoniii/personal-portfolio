@@ -344,6 +344,9 @@ h2 {
 .homepage3 {
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-right: 2%;
 
 }
@@ -369,7 +372,7 @@ h2 {
     margin-top: 4%;
     margin-left: 4%;
     /* width: 23rem; */
-    height: 15rem;
+    height: 20rem;
 }
 
 .hp3-card {
@@ -401,7 +404,7 @@ h2 {
 }
 
 .hp3-card-content {
-    margin-top: 10%;
+    margin-top: 3%;
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
     vertical-align: bottom;
@@ -457,6 +460,46 @@ h2 {
 
     color: black;
 }
+
+
+
+/* Card skill btn */
+.card-skill-div-res {
+    display: flex;
+    background-color: #ffffff00;
+    margin-top: 3%;
+
+}
+
+.card-btn-skill {
+    background-color: #ffffff00;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.card-skill {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    border-radius: 4rem;
+    border: 1px solid rgb(1, 0, 0);
+    background-color: #9c9999a7;
+}
+
+.card-skill:hover {
+
+    background-color: #89cf9469;
+    cursor: pointer;
+}
+
+.card-btn-skill-txt {
+    font-size: 0.5rem;
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+
 
 
 /* Homepage 4 */
@@ -989,7 +1032,7 @@ h2 {
     .nav-btn-link {
         font-size: 1.1rem;
     }
-   
+
 
     .hp2-card1-img {
         width: 19rem;
@@ -999,8 +1042,8 @@ h2 {
 
 @media (max-width: 883px) {
 
-    .small-lnk{
-        font-size: 1.8rem ;
+    .small-lnk {
+        font-size: 1.8rem;
 
     }
 
@@ -1018,23 +1061,27 @@ h2 {
 
 }
 
-@media (max-width: 883px) {
+@media (max-width: 835px) {
 
     .firstTwo {
         display: block;
     }
 
     .hp3-card {
-        margin-top: 2%;
+        margin-top: 1%;
     }
 
     .hp3-card-heading {
         font-size: 1.4rem;
-        margin-top: 7%;
+        margin-top: 2.6%;
     }
 
     .hp3-card-content {
         font-size: 1.2rem;
+    }
+
+    .hp-projects {
+        height: 23rem;
     }
 
 }
@@ -1083,8 +1130,9 @@ h2 {
     .nav-btn-link {
         font-size: 0.9rem;
     }
-    .small-lnk{
-        font-size: 1.8rem ;
+
+    .small-lnk {
+        font-size: 1.8rem;
 
     }
 
@@ -1164,8 +1212,9 @@ h2 {
     .nav-btn-link {
         font-size: 0.7rem;
     }
-    .small-lnk{
-        font-size: 1.4rem ;
+
+    .small-lnk {
+        font-size: 1.4rem;
 
     }
 
@@ -1201,12 +1250,21 @@ h2 {
     }
 }
 
+@media (max-width: 603px) {
+
+    .hp-projects {
+        height: 28rem;
+    }
+}
+
 @media (max-width: 590px) {
 
-    .small-lnk{
-        font-size: 1.3rem ;
+    .small-lnk {
+        font-size: 1.3rem;
 
-    }}
+    }
+}
+
 @media (max-width: 590px) {
 
     /* .nav-btn {
@@ -1244,8 +1302,8 @@ h2 {
         white-space: wrap;
     }
 
-    .small-lnk{
-        font-size: 1.1rem ;
+    .small-lnk {
+        font-size: 1.1rem;
 
     }
 
@@ -1378,8 +1436,20 @@ h2 {
     }
 }
 
+@media (max-width: 478px) {
+
+    .hp-projects {
+        height: 32rem;
+    }
+
+}
+
 @media (max-width: 455px) {
 
+
+    .card-skill {
+        margin-left: 0rem;
+    }
 
     .mrgn-nav {
         margin-left: 3%;
@@ -1408,6 +1478,34 @@ h2 {
     }
 }
 
+@media (max-width: 400px) {
+    .hp-projects {
+        height: 25rem;
+    }
+
+    .hp3-card-content {
+        font-size: 0.9rem;
+    }
+
+    .hp3-card-heading {
+        font-size: 1.2rem;
+        /* margin-top: 2.6%; */
+    }
+
+    .card-btn-skill {
+        padding: 0rem 0.2rem 0rem 0.2rem;
+    }
+
+    .card-btn-skill-txt {
+        font-size: 0.45rem;
+    }
+
+    .hp3-card-link {
+        margin-top: 6%;
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 386px) {
     .nav-btn-link3 {
         font-size: 0.6rem;
@@ -1420,12 +1518,13 @@ h2 {
     .bg-hover-grey svg {
         font-size: 0.8rem;
     }
-    .small-lnk{
-        font-size: 0.8rem ;
+
+    .small-lnk {
+        font-size: 0.8rem;
 
     }
-    .hp2-card2
-    {
+
+    .hp2-card2 {
         height: 26rem;
     }
 }
@@ -1436,21 +1535,37 @@ h2 {
         margin: 1rem 0.3rem;
     }
 }
+
+@media (max-width: 335px) {
+    .hp-projects {
+        height: 30rem;
+    }
+}
+
 @media (max-width: 325px) {
     .bg-hover-grey svg {
         font-size: 0.5rem;
     }
+
     .nav-btn-link {
         font-size: 0.5rem;
     }
 
 }
+
 @media (max-width: 311px) {
     .HomePage2 {
         margin-top: 40%;
     }
+
     .nav-btn-link3 {
         font-size: 0.5rem;
     }
-    
+
+}
+
+@media (max-width: 299px) {
+    .hp-projects {
+        height: 33rem;
+    }
 }

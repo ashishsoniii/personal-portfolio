@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../components/Form";
+import Form from "./components/Form";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { AiFillGitlab, AiOutlineMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";

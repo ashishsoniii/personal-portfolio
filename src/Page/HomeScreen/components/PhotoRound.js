@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/ashish4.jpg";
+import img from "../../../assets/ashish4.jpg";
 
 function PhotoRound() {
   return (

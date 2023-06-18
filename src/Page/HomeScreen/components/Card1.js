@@ -1,5 +1,5 @@
 import React from "react";
-import imgCard1 from "../assets/gsoc.png";
+import imgCard1 from "../../../assets/gsoc.png";
 import { motion } from "framer-motion";
 
 function Card1() {
