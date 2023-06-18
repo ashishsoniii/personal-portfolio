@@ -7,7 +7,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 function HomePage4() {
   return (
     <>
-      <div className="homepage3-heading">Contact</div>
+      <div id="contact" className="homepage3-heading">Contact</div>
       <div className="hp4">
         <div className="hp4Form ">
           <div className="form-heading form-bg">Get In Touch With Me!</div>

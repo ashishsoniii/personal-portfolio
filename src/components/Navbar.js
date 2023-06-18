@@ -41,7 +41,7 @@ function Navbar() {
 
         <motion.a
           className="nav-btn bg-hover-grey"
-          href="/"
+          href="#"
           onClick={handleButtonClick}
           variants={navItemVariants}
           initial="hidden"
@@ -58,7 +58,7 @@ function Navbar() {
 
         <motion.a
           className="nav-btn bg-hover-grey"
-          href="/"
+          href="#contact"
           onClick={handleButtonClick}
           variants={navItemVariants}
           initial="hidden"

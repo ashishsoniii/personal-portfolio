@@ -19,13 +19,13 @@ function HomePage2() {
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 90 }}
+          whileInView={{ opacity: 1, y: 80 }}
           transition={{ duration: 1.4 }} // Transition configuration
           exit={{ opacity: 0, y: -50 }}
           className="hp2-card2"
         >
           <Card2 />
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 30 }}
             transition={{ duration: 1.4 }} // Transition configuration
@@ -33,7 +33,7 @@ function HomePage2() {
             className="hp2-card2 marign-adjust three-bg"
           >
             <Card3 />
-          </motion.div>
+          </motion.div> */}
         </motion.div>
         {/* <div className="hp2-card3">3</div> */}
       </div>

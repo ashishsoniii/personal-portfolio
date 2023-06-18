@@ -19,19 +19,18 @@ function Card2() {
           </a>
         </motion.div>
       </div>
-      {/* <div className="heading">My Blogs</div> */}
 
       <div className="card2">
-        {/* <div className="card2-img">
-          <img className="hp2-card2-img" src={imgCard2} alt="" />
-        </div> */}
+      
         <div className="card2-text">
           <div className="card2-text-heading">
-            Tor’s SnowFlake: Revitalising Snowflake's Landing Page for a Better
-            User Experience
+          <p>
+    
+          Yoglabs is an early-phase research lab dedicated to advancing the fields of data analysis, AI, ML, and data aggregation.
+          </p>
           </div>
           <div className="card2-text-content">
-            Project Aims to re-code The Snowflake's Landing page! <br />
+          Enhancing project frontends, building impactful landing pages, and delivering exceptional user experiences through skilled frontend development across multiple projects. <br />
             <br />
             <a
               href="https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia"

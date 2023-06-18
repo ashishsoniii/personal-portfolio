@@ -54,6 +54,13 @@
     font-size: 1.5rem;
     padding-right: 2rem;
     /* Add some padding for visibility */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 
 .ashish-txt {
@@ -93,7 +100,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 1.3rem;
+    margin-top: 4.3rem;
     margin-left: 3rem;
     height: 5rem;
     border-radius: 4rem;
@@ -173,7 +180,7 @@ h2 {
     display: flex;
     flex-direction: row;
     /* align-items: center; */
-    margin-top: 8%;
+    margin-top: 1%;
     margin-left: 3%;
     min-height: 6rem;
     border-radius: 4rem;
@@ -219,7 +226,7 @@ h2 {
 }
 
 .card1-text-heading {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 800;
     margin-bottom: 1rem;
@@ -238,7 +245,7 @@ h2 {
 
     margin-top: 3%;
     margin-left: 8%;
-    height: 17rem;
+    height: 22rem;
     min-width: 27rem;
     border-radius: 1.4rem;
     border: 2px solid #ebdede;
@@ -270,15 +277,22 @@ h2 {
     margin-left: 5%;
     background-color: #eae2a0;
 
+    max-width: 40rem;
 }
 
 .card2-text-heading {
-    font-size: 1rem;
     font-family: 'Titillium Web', sans-serif;
-    font-weight: 800;
     margin-bottom: 1rem;
     background-color: #eae2a0;
     color: black;
+}
+
+.card2-text-heading p {
+    background-color: #ffffff00;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+
 }
 
 .card2-text-content {
@@ -665,6 +679,7 @@ h2 {
 
 .homes-div-res {
     display: flex;
+    justify-content: center;
 }
 
 
@@ -813,7 +828,7 @@ h2 {
     }
 }
 
-@media (max-width: 1271px) {
+@media (max-width: 1281px) {
 
     .nav-btn {
         padding: 0.3rem 3rem 0.3rem 1rem
@@ -866,6 +881,7 @@ h2 {
 
     .hp2-card2 {
         margin-left: 3%;
+        height: 24rem;
         /* min-width: 2rem; */
     }
 }
@@ -942,6 +958,10 @@ h2 {
         font-weight: 800;
         /* padding-right: 8rem; */
     }
+
+    .hp-text-text {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 930px) {
@@ -976,7 +996,7 @@ h2 {
     }
 }
 
-@media (max-width: 827px) {
+@media (max-width: 883px) {
 
     .hp2-card2 {
         margin-left: 1%;
@@ -992,7 +1012,7 @@ h2 {
 
 }
 
-@media (max-width: 763px) {
+@media (max-width: 883px) {
 
     .firstTwo {
         display: block;
@@ -1013,7 +1033,7 @@ h2 {
 
 }
 
-@media (max-width: 763px) {
+@media (max-width: 883px) {
     .HomePage2 {
         display: block;
         margin-bottom: 20rem;
@@ -1124,7 +1144,7 @@ h2 {
 }
 
 
-@media (max-width: 659px) {
+@media (max-width: 662px) {
 
     .nav-btn {
         /* padding: 0rem 1rem 0rem 1rem; */
@@ -1160,6 +1180,13 @@ h2 {
     }
 }
 
+@media (max-width: 636px) {
+    .hp-text-text {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 590px) {
 
     /* .nav-btn {
@@ -1184,7 +1211,7 @@ h2 {
         display: flex;
         font-size: 1.2em;
         font-family: monospace;
-        overflow: hidden;
+        /* overflow: hidden; */
         /* border: 1px solid; */
         resize: horizontal;
         justify-content: center;
@@ -1350,7 +1377,7 @@ h2 {
 }
 
 
-@media (max-width: 760px) {
+@media (max-width: 883px) {
     .hp2-card1-img {
         width: 80%;
         height: 100%;

@@ -12,12 +12,13 @@ function HomePage() {
     { link: "", text: "HTML" },
     { link: "", text: "CSS" },
     { link: "", text: "Javascript" },
-    { link: "", text: "Web Developement" },
+    { link: "", text: "Web Development" },
     // Add more buttons as needed
   ];
 
   return (
     <>
+      {/* Section 1 */}
       <motion.div className="homepage-main">
         <AnimatePresence>
           <motion.div
@@ -29,29 +30,16 @@ function HomePage() {
             transition={{ duration: 0.5 }}
           >
             <div className="ashish-txt">Ashish Soni</div>
-            <div className=" ashish-txt mobile-only">
+            <div className="ashish-txt mobile-only">
               Designing and developing the web of tomorrow!
             </div>
-            <div className=" hide-mobile ">
-              {/* <motion.div
-                initial={{ opacity: 0, scale: 0.9 }} // Initial state of the component
-                animate={{ opacity: 1, scale: 1 }} // Animation to be applied
-                transition={{ duration: 0.3 }} // Transition configuration
-                whileHover={{ scale: 1.1 }} // Animation on hover
-                // className="nav-btn bg-hover-white "
-              > */}
-              <button class="glow-on-hover" type="button">
+            <div className="hide-mobile">
+              <button className="glow-on-hover" type="button">
                 Web Developer
               </button>
-
-              {/* </motion.div> */}
               <div className="nav-btn-2 tp">
-                <a
-                  href="/"
-                  className="nav-btn-link2"
-                  style={{ color: "black" }}
-                >
-                  Building modern, mobile-first websites <br/> that make a lasting impression!
+                <a href="/" className="nav-btn-link2" style={{ color: "black" }}>
+                  Building modern, mobile-first websites that make a lasting impression!
                 </a>
               </div>
             </div>
@@ -68,27 +56,20 @@ function HomePage() {
       </motion.div>
 
       {/* Section 2 */}
-      {/* Section 2 */}
-      {/* Section 2 */}
-      {/* Section 2 */}
       <div className="homeSection2">
         <div className="homes-div-res">
           {Skills.map((btn, index) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 0 }} // Initial state of the component
-              animate={{ opacity: 1, scale: 1, y: -100 }} // Animation to be applied
-              transition={{ duration: 0.3 }} // Transition configuration
-              // initial={{ opacity: 0, y: 50 }}
-              // animate={{ opacity: 1, y: 0 }}
-
-              whileInView={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 100 }}
-              // transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.3 }} // Animation on hover
               className="nav2 tp"
               key={index}
+              initial={{ opacity: 0, scale: 0.9, y: 0 }}
+              animate={{ opacity: 1, scale: 1, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 100 }}
+              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.2 }}
             >
-              <div className="nav-btn3" key={index}>
+              <div className="nav-btn3">
                 <h1 className="nav-btn-link3">{btn.text}</h1>
               </div>
             </motion.div>
@@ -96,55 +77,49 @@ function HomePage() {
         </div>
         <motion.div
           className="hp-right hs2"
-          initial={{ opacity: 0, scale: 0.9, y: 0 }} // Initial state of the component
-          animate={{ opacity: 1, scale: 1, y: -100 }} // Animation to be applied
-          transition={{ duration: 0.3 }} // Transition configuration
-          // initial={{ opacity: 0, y: 50 }}
-          // animate={{ opacity: 1, y: 0 }}
-
+          initial={{ opacity: 0, scale: 0.9, y: 0 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 100 }}
-          // transition={{ duration: 0.5 }}
-          // whileHover={{ scale: 1.3 }} // Animation on hover
+          transition={{ duration: 0.3 }}
         >
           <div className="hp-text-text">
-            Turning design visions into seamless and responsive web experiences{" "}
+            Turning design visions into seamless and responsive web experiences
             <br />
             that captivate and engage users across devices.
           </div>
         </motion.div>
       </div>
 
+      {/* Section 3 */}
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
-          // animate={{ opacity: 1, y: -100 }}
-          whileInView={{ opacity: 1, y: -66 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 3 }}
-          exit={{ opacity: 0, y: -250 }}
+          // exit={{ opacity: 0, y: -250 }}
         >
           <HomePage2 />
         </motion.div>
       </AnimatePresence>
 
+      {/* Section 4 */}
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, y: 300 }}
-          // animate={{ opacity: 1, y: 50 }}
-          // initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y: 47 }}
+          whileInView={{ opacity: 1, y: 10 }}
           transition={{ duration: 2 }}
-          exit={{ opacity: 0, y: -500 }}
+          // exit={{ opacity: 0, y: -500 }}
         >
           <HomePage3 />
         </motion.div>
       </AnimatePresence>
 
+      {/* Section 5 */}
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
-          // animate={{ opacity: 1, y: 0 }}
-          whileInView={{ opacity: 1, y: 40 }}
+          whileInView={{ opacity: 1, y: 130 }}
           transition={{ duration: 2 }}
           exit={{ opacity: 0, y: -500 }}
         >
