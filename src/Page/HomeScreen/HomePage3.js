@@ -17,7 +17,8 @@ function HomePage3() {
         <motion.div className="firstTwo">
           <Hp3projectCard1
             heading="No Limits Fitness Gym Management Website App"
-            link="/lik"
+            link="https://sample-nlf.000webhostapp.com/"
+            linktext="Try Sample Website"
             backgroundColor="hp3-bg-white"
             content="
             An ultimate all-in-one app for GYM trainers & owners. Simplify gym member management, tracks owner income, and ensure seamless communication with automated email reminders for expired memberships. Streamlining his fitness business with this comprehensive Website!"
@@ -25,7 +26,8 @@ function HomePage3() {
           />
           <Hp3projectCard1
             heading="RasYog: An Aesthetic Analysis Website"
-            link="/lik"
+            link="https://rasyog.netlify.app/"
+            linktext="RasYog"
             backgroundColor="hp3-bg-yellow"
             // content="A data analysis companion website for Jaipur Modern Store. Powered by Yoglabs, Rasyog simplifies data analysis by presenting it in easy-to-understand visual plots. It gives a variety of plots to gain meaningful insights and make informed decisions!"
             content="A Website with user-friendly interface showcasing comprehensive taxonomic and sales data analysis. A frontend for understanding product categories, brands, prices, and sales insights. It gives a variety of plots to gain meaningful insights and make informed decisions!"
@@ -40,14 +42,16 @@ function HomePage3() {
         <motion.div className="firstTwo">
           <Hp3projectCard1
             heading="DineYog"
-            link="/lik"
+            link="https://dineyog.netlify.app/"
+            linktext="Website Under-Construction!"
             backgroundColor="hp3-bg-blue"
             content="Developed restaurant data analysis website. Analyzed dine-in, takeout, and delivery trends with interactive graphs. Provided valuable insights on customer preferences to the owners."
             Skills={skills}
           />
           <Hp3projectCard1
             heading="FlairFest - A College Fest Website"
-            link="/lik"
+            link="https://flairfiesta.in/"
+            linktext="FlairFiesta.in"
             backgroundColor="hp3-bg-green"
             content="Worked collaboratively within a team to develop a captivating college website with a focus on frontend development. Utilized React, and animation libraries to bring the website to life."
             Skills={["React", "Tailwind.css"]}

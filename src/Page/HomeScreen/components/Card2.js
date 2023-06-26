@@ -14,7 +14,7 @@ function Card2() {
           whileHover={{ scale: 1.1 }} // Animation on hover
           className="nav-btn manage-margin-card"
         >
-          <a href="/" className="nav-btn-link small-lnk">
+          <a href="https://rasyog.netlify.app/team" target="__blank" className="nav-btn-link small-lnk">
             Frontend @ YogLabs
           </a>
         </motion.div>

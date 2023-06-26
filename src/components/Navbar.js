@@ -41,7 +41,8 @@ function Navbar() {
 
         <motion.a
           className="nav-btn bg-hover-grey"
-          href="#"
+          href="https://drive.google.com/file/d/1WjtNWXWId_pjPLtTXgSvgXsCfeniMiow/view?usp=sharing"
+          target="__blank"
           onClick={handleButtonClick}
           variants={navItemVariants}
           initial="hidden"

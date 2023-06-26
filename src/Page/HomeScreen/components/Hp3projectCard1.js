@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-function Hp3projectCard1({ heading, link, backgroundColor, content, Skills }) {
+function Hp3projectCard1({
+  heading,
+  link,
+  linktext,
+  backgroundColor,
+  content,
+  Skills,
+}) {
   // const Skills = [
   //   {  text: "React" },
   //   {  text: "HTML" },
@@ -42,9 +49,11 @@ function Hp3projectCard1({ heading, link, backgroundColor, content, Skills }) {
         </div>
 
         <div className={`hp3-card-content ${backgroundColor}`}>{content}</div>
-        {/* <div className={`hp3-card-link ${backgroundColor}`}>
-          <a href={link}>Sample Website Link</a>
-        </div> */}
+        <div className={`hp3-card-link ${backgroundColor}`}>
+          <a target="__blank" href={link}>
+            {linktext}
+          </a>
+        </div>
       </div>
     </motion.div>
   );

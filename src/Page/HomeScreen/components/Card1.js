@@ -13,7 +13,7 @@ function Card1() {
           whileHover={{ scale: 1 }} // Animation on hover
           className="nav-btn manage-margin-card"
         >
-          <a href="/" className="nav-btn-link small-lnk">
+          <a target="__blank" href="https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia" className="nav-btn-link small-lnk">
             Google Summer Of Code @ The Tor Project
           </a>
         </motion.div>
