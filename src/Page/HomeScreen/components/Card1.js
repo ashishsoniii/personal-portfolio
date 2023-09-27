@@ -1,6 +1,7 @@
 import React from "react";
 import imgCard1 from "../../../assets/gsoc.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Card1() {
   return (
@@ -13,7 +14,11 @@ function Card1() {
           whileHover={{ scale: 1 }} // Animation on hover
           className="nav-btn manage-margin-card"
         >
-          <a target="__blank" href="https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia" className="nav-btn-link small-lnk">
+          <a
+            target="__blank"
+            href="https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia"
+            className="nav-btn-link small-lnk"
+          >
             Google Summer Of Code @ The Tor Project
           </a>
         </motion.div>
@@ -32,12 +37,24 @@ function Card1() {
           <div className="card1-text-content">
             Project Aims to re-code The Snowflake's Landing page! <br />
             <br />
-            <a
-              href="https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia"
-              target="__blank"
+            <motion.div
+              className="nav2 tp  btn-on-card-dgn"
+              initial={{ opacity: 0, scale: 0.9, y: 0 }}
+              animate={{ opacity: 1, scale: 1, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 100 }}
+              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.2 }}
             >
-              Link to Project
-            </a>
+              {/* <a
+                href="https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia"
+                target="__blank"
+              > */}
+              <Link to="/gsoc/#" className="nav-btn6 ">
+                <h1 className="nav-btn-link6">Gsoc</h1>
+              </Link>
+              {/* </a> */}
+            </motion.div>
           </div>
         </div>
       </div>

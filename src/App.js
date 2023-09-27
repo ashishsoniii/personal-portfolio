@@ -21,6 +21,7 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import HomePage from "./Page/HomeScreen/HomePage";
 import { Routes, Route } from "react-router-dom";
+import Gsoc from "./Page/Gsoc/Gsoc";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/gsoc" element={<Gsoc />} />
           {/* <Route exact path="/" element={<HomePage2 />} /> */}
 
           {/* <HomePage /> */}

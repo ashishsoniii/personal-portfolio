@@ -131,7 +131,27 @@ h2 {
     display: flex;
     font-size: 0.6rem;
 
+}
 
+.nav-btn6 {
+    margin: 0.2rem 0.3rem;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    fill: rgb(0, 0, 0);
+    border-radius: 7rem;
+    border: 2px solid #debbbb;
+    background-color: #ffffff;
+    /* cursor: default; */
+    display: inline;
+    /* border-style: double; */
+    justify-content: flex-start;
+    display: flex;
+    font-size: 0.6rem;
+
+}
+
+.btn-on-card-dgn {
+    cursor: pointer;
+    width: 20%;
 }
 
 
@@ -141,6 +161,17 @@ h2 {
     border-style: double;
     border: 2px solid #4d0c0c;
     color: black !;
+
+
+
+}
+
+.nav-btn6:hover {
+    background-color: #000000;
+    /* cursor: default; */
+    border-style: double;
+    border: 2px solid #4d0c0c;
+    color: rgb(255, 255, 255) !;
 
 
 
@@ -156,11 +187,31 @@ h2 {
 
 }
 
+.nav-btn-link6 {
+
+    color: rgb(94, 98, 99);
+    font-size: 1.7em;
+    background-color: #ffffff00;
+    text-decoration: none;
+    /* transparent h */
+
+}
+
 .nav-btn-link3:hover {
 
 
     background-color: #181d2100;
     color: rgb(0, 0, 0);
+    /* font-size: 1.3em; */
+
+
+}
+
+.nav-btn-link6:hover {
+
+
+    background-color: #d9d9d900;
+    color: rgb(237, 237, 237);
     /* font-size: 1.3em; */
 
 
@@ -500,13 +551,14 @@ h2 {
 
 
 /* Link text  */
-.hp3-card-link a{
+.hp3-card-link a {
     font-size: 1.2rem;
     color: #585858;
 }
-.hp3-card-link a:hover{
+
+.hp3-card-link a:hover {
     color: #000000;
-    
+
 }
 
 
