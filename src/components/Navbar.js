@@ -52,7 +52,7 @@ function Navbar() {
 
         <motion.a
           className="nav-btn bg-hover-grey"
-          href="https://drive.google.com/file/d/1WjtNWXWId_pjPLtTXgSvgXsCfeniMiow/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Jx-An1OjOXvJWS6vQjvCO40sJ_Q54Sfb/view?usp=drive_link"
           target="__blank"
           onClick={handleButtonClick}
           variants={navItemVariants}
