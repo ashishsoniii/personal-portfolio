@@ -70,7 +70,7 @@ function Navbar() {
 
         <motion.a
           className="nav-btn bg-hover-grey"
-          href="#contact"
+          href="../#contact"
           onClick={handleButtonClick}
           variants={navItemVariants}
           initial="hidden"
