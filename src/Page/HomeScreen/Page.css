@@ -1450,7 +1450,8 @@ h2 {
     }
 
     .homepage-main {
-        background-image: linear-gradient(#e15757, yellow);
+        background-image: linear-gradient(#dbe600, rgb(183, 0, 255));
+        /* background-image: linear-gradient(#e15757, yellow); */
     }
 
     .ashish-txt {
