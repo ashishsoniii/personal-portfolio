@@ -39,8 +39,8 @@ function Card1() {
             <br />
             <motion.div
               className="nav2 tp  btn-on-card-dgn"
-              initial={{ opacity: 0, scale: 0.9, y: 0 }}
-              animate={{ opacity: 1, scale: 1, y: -100 }}
+              initial={{ opacity: 0, scale: 0.7, y: 0 }}
+              animate={{ opacity: 1, scale: 0.9, y: -100 }}
               whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 100 }}
               transition={{ duration: 0.3 }}
@@ -50,7 +50,7 @@ function Card1() {
                 href="https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia"
                 target="__blank"
               > */}
-              <Link to="/gsoc/#" className="nav-btn6 ">
+              <Link to="/gsoc/" className="nav-btn6 ">
                 <h1 className="nav-btn-link6">Gsoc</h1>
               </Link>
               {/* </a> */}

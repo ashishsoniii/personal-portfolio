@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Gsoc.css";
 import gsocTor from "../../assets/gsoc.png";
 import gsocDesktop from "../../assets/video/Snowflake-demo.mp4";
 import gsocMob from "../../assets/video/Snowflake_mobile.mp4";
+import { motion } from "framer-motion";
 
 function Gsoc() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <div className="outline-gsoc">
+      <motion.div
+        className="outline-gsoc"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="gsoc-heading">
           Google Summer of Code 2023 - Tor's SnowFlake: Revitalising Snowflake's
           Landing Page for a Better User Experience
@@ -291,7 +302,8 @@ function Gsoc() {
           </p>
         </div>
 
-        <div className="Project-sections">
+        <div className="Project-sections"
+        >
           <div className="section--gsoc-heading">💬 Connect With Me</div>
 
           <div align="center">
@@ -371,7 +383,7 @@ function Gsoc() {
             </table>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
