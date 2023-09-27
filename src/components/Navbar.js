@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { FaHome } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiOutlineNewspaper } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const navItemVariants = {
@@ -22,13 +23,22 @@ function Navbar() {
   return (
     <>
       <div className="nav">
-        <motion.a
+      
+      <motion.div
+                variants={navItemVariants}
+          initial="hidden"
+          animate="visible"
+          whileTap={{ scale: 0.9 }}
+
+>
+
+        <Link
           variants={navItemVariants}
           initial="hidden"
           animate="visible"
           whileTap={{ scale: 0.9 }}
           className="nav-btn mrgn-nav bg-hover-grey"
-          href="/"
+          to="/"
           onClick={handleButtonClick}
         >
           <div className="nav-wrap-icon bg-hover-grey">
@@ -37,7 +47,8 @@ function Navbar() {
             </div>
             <div className="nav-btn-link bg-hover-grey">Home Page</div>
           </div>
-        </motion.a>
+        </Link>
+      </motion.div>
 
         <motion.a
           className="nav-btn bg-hover-grey"
