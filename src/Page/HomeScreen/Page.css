@@ -740,7 +740,7 @@ h2 {
 
 .mail-icon {
     /* padding-top: 1rem; */
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
 
 }
 
@@ -1534,7 +1534,7 @@ h2 {
 
 @media (max-width: 883px) {
     .hp2-card1-img {
-        width: 80%;
+        width: 92%;
         height: 100%;
     }
 }
@@ -1614,19 +1614,236 @@ h2 {
 
 }
 
-@media (max-width: 311px) {
-    .HomePage2 {
-        margin-top: 40%;
+@media (max-width: 330px) {
+
+
+    .homepage-main {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
-    .nav-btn-link3 {
+    .glow-on-hover {
+        width: 167px;
+        height: 44px;
+    }
+
+    .ashish-txt {
+        font-size: 2.2rem;
+    }
+
+    .hp-left {
+        /* position: absolute; */
+        left: -6px;
+    }
+
+    .nav-btn-link {
+        margin-left: 0.3rem;
+    }
+
+    .nav-btn {
+        padding: 0.3rem 0.7rem 0.3rem 0.6rem;
+    }
+
+    .nav {
+        justify-content: center;
+        display: flex;
+    }
+
+    .tp{
+        justify-content: flex-start;
+    }
+
+    .hp-text-text {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .card1-text-heading {
+        font-size: 1rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .card1-text-content {
+        font-size: 0.7rem;
+        color: #cfcfcf;
+
+    }
+
+
+    .nav-btn-link6 {
+        font-size: 0.9rem;
+    }
+
+    .nav-btn6 {
+        margin: 0.2rem 0.2rem;
+        padding: 0rem 4rem 0.1rem 2rem;
+        fill: rgb(0, 0, 0);
+        border-radius: 7rem;
+        border: 2px solid #debbbb;
+        background-color: #ffffff;
+        /* cursor: default; */
+        display: inline;
+        /* border-style: double; */
+        justify-content: flex-start;
+        display: flex;
+        font-size: 0.7rem;
+    }
+
+    .hp2-card1-img {
+        width: 92%;
+        height: 100%;
+    }
+
+    .card2-text-heading p {
+        font-size: 1rem;
+    }
+
+    .card2-text-content {
+        font-size: 0.8rem;
+        color: #4b4b4b;
+    }
+
+    .hp2-card2 {
+        height: 21rem;
+    }
+
+
+
+
+    .hp3-card-heading {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        /* margin-top: 2.6%; */
+    }
+
+    .hp3-card-content {
+        font-size: 0.8rem;
+        color: #4b4b4b;
+        text-align: justify;
+    }
+
+    .hp3-card-link a {
+        font-size: 1rem;
+        color: #6205b4;
+    }
+
+    .hp-projects {
+        height: 24rem;
+    }
+
+    .hp-projects {
+        height: 24rem;
+        margin-top: 2.5rem;
+    }
+
+    .hp3-card {
+        margin: 1.7rem 0rem;
+        padding: 1.2rem 1rem 0rem 1rem
+    }
+
+    .homepage3-heading {
+
+        font-size: 2rem;
+
+    }
+
+
+    .hp4 {
+        margin-left: 0%;
+    }
+
+    .hp4Form {
+        margin-left: 1%;
+        margin-top: 9%;
+        max-width: 106%;
+        max-height: 28rem;
+        position: relative;
+    }
+
+    .form-heading {
+        margin-top: 3.5rem;
+        font-size: 1.3rem;
+    }
+
+    .transparent-input {
+        font-size: 1rem;
+    }
+
+    .form-button-sbmt {
+        font-size: 1rem;
+    }
+
+
+    .hp4Form {
+        height: calc(80% + -53px);
+    }
+
+
+    .hp4Form::before {
+        width: 15px;
+        height: calc(27% + 12px);
+    }
+
+    .hp4Form::after {
+        bottom: 75px;
+        right: -4px;
+        width: 13px;
+        height: calc(35% + 15px);
+        transform: skewY(-45deg);
+    }
+
+
+
+    .contact-text {
+        margin-top: 8%;
+        margin-left: 3%;
+        font-size: 1rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 800;
+        /* margin-bottom: 1rem; */
+        color: #7ff2b9;
+    }
+
+    .contact-text-heading {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .contact-text-content-1-content {
+        font-size: 1rem;
+        margin-left: 7.1px;
+    }
+
+    .contact-text-content-1 {
+        /* justify-content: center; */
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+
+    }
+
+    .contact-text-content {
+        margin-top: 10%;
+        margin-left: 1rem;
+    }
+
+    .social-icons {
+        margin-top: 15%;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 800;
+        /* margin-bottom: 1rem; */
+        color: #ff0000;
+        text-decoration: none;
+        padding: 0rem;
+    }
+
+    .social-icons a {
+        padding: 1rem;
         font-size: 0.5rem;
     }
 
-}
-
-@media (max-width: 299px) {
-    .hp-projects {
-        height: 33rem;
-    }
 }

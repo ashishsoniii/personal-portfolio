@@ -33,6 +33,8 @@ function HomePage4() {
               {/* </div> */}
             </div>
             <br />
+            <div className="contact-text-content-1">
+
             <BsFillTelephoneFill className="mail-icon" />
             <a
               className="contact-text-content-1-content"
@@ -41,6 +43,7 @@ function HomePage4() {
             >
               9660688940
             </a>
+          </div>
           </div>
           <div className="social-icons">
             <a

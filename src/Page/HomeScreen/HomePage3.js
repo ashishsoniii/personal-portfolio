@@ -25,7 +25,7 @@ function HomePage3() {
             Skills={["HTML", "CSS", "JavaScript", "PHP", "MySQL", "XAMPP"]}
           />
           <Hp3projectCard1
-            heading="RasYog: An Aesthetic Analysis Website"
+            heading="RasYog: An Aesthetic Analysis WebApp"
             link="https://rasyog.netlify.app/"
             linktext="RasYog"
             backgroundColor="hp3-bg-yellow"
@@ -41,11 +41,11 @@ function HomePage3() {
         </motion.div>
         <motion.div className="firstTwo">
           <Hp3projectCard1
-            heading="DineYog"
+            heading="DineYog: A Food Analysis WebApp"
             link="https://dineyog.netlify.app/"
-            linktext="Website Under-Construction!"
+            linktext="DineYog"
             backgroundColor="hp3-bg-blue"
-            content="Developed restaurant data analysis website. Analyzed dine-in, takeout, and delivery trends with interactive graphs. Provided valuable insights on customer preferences to the owners."
+            content="Developed a comprehensive restaurant data analysis website designed to provide valuable insights into dining trends, including dine-in, takeout, and delivery services. Implemented a suite of interactive graphs and analytics tools to distill complex data sets into actionable information for restaurant owners."
             Skills={skills}
           />
           <Hp3projectCard1
@@ -53,7 +53,7 @@ function HomePage3() {
             link="https://flairfiesta.in/"
             linktext="FlairFiesta.in"
             backgroundColor="hp3-bg-green"
-            content="Worked collaboratively within a team to develop a captivating college website with a focus on frontend development. Utilized React, and animation libraries to bring the website to life."
+            content="Engaged in a dynamic team effort to craft a compelling and interactive college website, with a specialized role in front-end development. Leveraged cutting-edge technologies including React and various animation libraries to create an engaging user experience that resonates with prospective students and faculty."
             Skills={["React", "Tailwind.css"]}
           />
         </motion.div>
