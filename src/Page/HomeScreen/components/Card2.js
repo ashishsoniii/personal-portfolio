@@ -20,7 +20,7 @@ function Card2() {
         </motion.div>
       </div>
 
-      <div className="card2">
+      <div className="card2 make-it-up">
       
         <div className="card2-text">
           <div className="card2-text-heading">

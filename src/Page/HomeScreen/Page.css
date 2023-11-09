@@ -420,7 +420,7 @@ h2 {
 /* card */
 
 .hp-projects {
-    margin-top: 4%;
+    margin-top: 16%;
     margin-left: 4%;
     /* width: 23rem; */
     height: 20rem;
@@ -871,7 +871,23 @@ h2 {
     align-items: center;
 }
 
+.contact-text-content-1-content {
+    font-size: 1.4rem;
+    margin-left: 7.1px;
+}
 
+.contact-text-content-1 {
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+
+}
+
+.contact-text-content {
+    margin-top: 10%;
+    margin-left: 1rem;
+}
 
 /* Responsivesness */
 /* Responsivesness */
@@ -1500,7 +1516,7 @@ h2 {
 @media (max-width: 478px) {
 
     .hp-projects {
-        height: 32rem;
+        height: 34rem;
     }
 
 }
@@ -1539,6 +1555,15 @@ h2 {
     }
 }
 
+@media (max-width: 455px) {
+
+
+    .contact-text {
+        margin-top: 8%;
+        margin-left: 1% ;
+
+    }
+}
 @media (max-width: 400px) {
     .hp-projects {
         height: 25rem;
@@ -1581,8 +1606,11 @@ h2 {
     }
 
     .small-lnk {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
 
+    }
+    .make-it-up{
+        margin-top: -1rem;
     }
 
     .hp2-card2 {
