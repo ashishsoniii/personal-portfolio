@@ -1644,7 +1644,7 @@ h2 {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
 
 
     .homepage-main {
@@ -1764,7 +1764,7 @@ h2 {
     }
 
     .hp-projects {
-        height: 24rem;
+        height: 20rem;
         margin-top: 2.5rem;
     }
 
@@ -1876,4 +1876,11 @@ h2 {
         font-size: 0.5rem;
     }
 
+}
+
+@media (max-width: 314px) {
+    .hp-projects {
+        height: 24rem;
+        margin-top: 2.5rem;
+    }
 }
