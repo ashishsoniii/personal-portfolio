@@ -880,7 +880,7 @@ h2 {
     /* justify-content: center; */
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
 
 }
 
@@ -1560,10 +1560,11 @@ h2 {
 
     .contact-text {
         margin-top: 8%;
-        margin-left: 1% ;
+        margin-left: 1%;
 
     }
 }
+
 @media (max-width: 400px) {
     .hp-projects {
         height: 25rem;
@@ -1609,7 +1610,8 @@ h2 {
         font-size: 0.8rem !important;
 
     }
-    .make-it-up{
+
+    .make-it-up {
         margin-top: -1rem;
     }
 
@@ -1677,7 +1679,7 @@ h2 {
         display: flex;
     }
 
-    .tp{
+    .tp {
         justify-content: flex-start;
     }
 
@@ -1848,7 +1850,7 @@ h2 {
         /* justify-content: center; */
         display: flex;
         flex-direction: row;
-        align-items: end;
+        align-items: flex-end;
 
     }
 
