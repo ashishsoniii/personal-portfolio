@@ -3,7 +3,7 @@ import PhotoRound from "./components/PhotoRound";
 
 function HomePage() {
   return (
-    <div className="relative min-h-[60vh] flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black py-8 sm:py-12 md:py-16 px-2 sm:px-4 md:px-8 overflow-hidden">
+    <div className="relative min-h-[60vh] flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black py-8 sm:py-12 md:py-16 px-2 sm:px-4 md:px-8 overflow-hidden pt-16 sm:pt-20 md:pt-32">
       {/* Animated Gradient Glow */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
@@ -17,7 +17,7 @@ function HomePage() {
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="relative z-10 w-full max-w-5xl bg-white/10 backdrop-blur-2xl rounded-[2rem] md:rounded-[3rem] shadow-2xl border border-white/20 flex flex-col md:flex-row items-center justify-between p-4 sm:p-8 md:p-12 lg:p-16 gap-8 md:gap-0"
+        className="relative z-10 w-full max-w-7xl bg-white/10 backdrop-blur-2xl rounded-[2rem] md:rounded-[3rem] shadow-2xl border border-white/20 flex flex-col md:flex-row items-center justify-between p-4 sm:p-8 md:p-12 lg:p-16 gap-8 md:gap-0"
       >
         {/* Left: Name & Tagline */}
         <div className="w-full md:w-2/3 flex flex-col items-start justify-center text-center md:text-left">

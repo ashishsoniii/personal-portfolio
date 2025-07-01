@@ -86,10 +86,10 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 w-full flex flex-col items-cente">
-      <div className="w-full h-1 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 opacity-80 rounded-b-2xl mb-1" />
+    <nav className="sticky top-0 z-50 w-full">
+      <div className="w-full h-1 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 opacity-80 rounded-b-2xl" />
       {/* Mobile: Dynamic Island */}
-      <div className="block sm:hidden w-full flex justify-center items-center pt-4 px-4 absolute top-0 left-0 z-50">
+      <div className="block sm:hidden w-full flex justify-center items-center pt-4 px-4 absolute top-1 left-0 z-50">
         {/* Backdrop overlay when menu is open */}
         <AnimatePresence>
           {menuOpen && (
@@ -169,7 +169,7 @@ function Navbar() {
       </div>
 
       {/* Desktop nav */}
-      <div className="w-full flex justify-center items-center px-2 py-4 hidden sm:flex overflow-hidden">
+      <div className="w-full flex justify-center items-center px-2 py-4 hidden sm:flex overflow-hidden absolute top-1 left-0 z-40">
         <div
           className="flex flex-wrap justify-center items-center space-x-2 md:space-x-4 rounded-full px-4 md:px-6 py-2 shadow-2xl border border-white/30 bg-gradient-to-r from-purple-700/60 via-pink-500/40 to-blue-500/40 backdrop-blur-md w-full max-w-5xl mx-auto overflow-x-auto overflow-y-hidden"
         >

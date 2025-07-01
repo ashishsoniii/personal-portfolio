@@ -11,7 +11,7 @@ const AboutMe = () => {
     >
       <motion.div
         whileHover={{ scale: 1.02 }}
-        className="relative w-full max-w-5xl rounded-3xl p-1 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 shadow-2xl mx-auto"
+        className="relative w-full max-w-6xl rounded-3xl p-1 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 shadow-2xl mx-auto"
       >
         {/* Glassy inner card */}
         <div className="relative bg-black/70 backdrop-blur-2xl rounded-3xl p-4 sm:p-8 md:p-12 lg:p-16 text-center border border-white/20 overflow-hidden w-full">
