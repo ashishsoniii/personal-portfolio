@@ -1,40 +1,9 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaExternalLinkAlt, FaStar, FaCodeBranch, FaEye, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaExternalLinkAlt } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 const SocialCards = () => {
-  const [githubData, setGithubData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
   const githubUsername = "ashishsoniii";
-
-  useEffect(() => {
-    const fetchGitHubData = async () => {
-      try {
-        setLoading(true);
-        
-        // Fetch user data
-        const userResponse = await fetch(`https://api.github.com/users/${githubUsername}`);
-        const userData = await userResponse.json();
-        
-        // Fetch top repositories
-        const reposResponse = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=stars&per_page=3`);
-        const reposData = await reposResponse.json();
-        
-        setGithubData({
-          user: userData,
-          repos: reposData
-        });
-      } catch (err) {
-        console.error("GitHub API Error:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchGitHubData();
-  }, [githubUsername]);
 
   const socialLinks = [
     {
@@ -71,26 +40,7 @@ const SocialCards = () => {
     }
   ];
 
-  const stats = [
-    {
-      label: "Repositories",
-      value: githubData?.user?.public_repos || 0,
-      icon: <FaCodeBranch />,
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      label: "Followers",
-      value: githubData?.user?.followers || 0,
-      icon: <FaEye />,
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      label: "Stars Earned",
-      value: githubData?.repos?.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0) || 0,
-      icon: <FaStar />,
-      color: "from-yellow-500 to-orange-500"
-    }
-  ];
+
 
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900">
@@ -150,116 +100,7 @@ const SocialCards = () => {
           ))}
         </div>
 
-        {/* GitHub Stats Section */}
-        {!loading && githubData && (
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="mb-16"
-          >
-            <div className="bg-gradient-to-r from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/30">
-              <div className="flex flex-col lg:flex-row items-center gap-8">
-                {/* GitHub Profile */}
-                <div className="flex-shrink-0 text-center lg:text-left">
-                  <img
-                    src={githubData.user.avatar_url}
-                    alt="GitHub Profile"
-                    className="w-24 h-24 rounded-full border-4 border-purple-500/50 shadow-2xl mx-auto lg:mx-0 mb-4"
-                  />
-                  <h3 className="text-2xl font-bold text-white mb-2">{githubData.user.name || githubUsername}</h3>
-                  <p className="text-gray-400">{githubData.user.bio || "Passionate developer building amazing things"}</p>
-                </div>
-                
-                {/* Stats */}
-                <div className="flex-1">
-                  <h4 className="text-xl font-bold text-white mb-6 text-center lg:text-left">GitHub Activity</h4>
-                  <div className="grid grid-cols-3 gap-4">
-                    {stats.map((stat, index) => (
-                      <motion.div
-                        key={stat.label}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.6 + index * 0.1 }}
-                        className="text-center"
-                      >
-                        <div className={`text-3xl mb-2 bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}>
-                          {stat.icon}
-                        </div>
-                        <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
-                        <div className="text-gray-400 text-sm">{stat.label}</div>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        )}
 
-        {/* Top Repositories */}
-        {!loading && githubData?.repos && (
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
-          >
-            <h3 className="text-3xl font-bold text-white mb-8 text-center">Featured Projects</h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              {githubData.repos.slice(0, 3).map((repo, index) => (
-                <motion.div
-                  key={repo.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.8 + index * 0.1 }}
-                  className="group relative"
-                >
-                  {/* Background Glow */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500 rounded-2xl"></div>
-                  
-                  {/* Card */}
-                  <div className="relative bg-gradient-to-r from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 group-hover:scale-105">
-                    <div className="flex items-start justify-between mb-4">
-                      <h4 className="text-lg font-bold text-white group-hover:text-purple-400 transition-colors">
-                        {repo.name}
-                      </h4>
-                      <a
-                        href={repo.html_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-white transition-colors"
-                      >
-                        <FaExternalLinkAlt />
-                      </a>
-                    </div>
-                    <p className="text-gray-300 text-sm mb-4 line-clamp-2">
-                      {repo.description || "No description available"}
-                    </p>
-                    <div className="flex items-center justify-between text-sm text-gray-400">
-                      <div className="flex items-center gap-3">
-                        <span className="flex items-center gap-1">
-                          <FaStar className="text-yellow-500" />
-                          {repo.stargazers_count}
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <FaCodeBranch className="text-blue-500" />
-                          {repo.forks_count}
-                        </span>
-                      </div>
-                      <span className="text-xs bg-gray-700/50 px-2 py-1 rounded">
-                        {repo.language || "Other"}
-                      </span>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        )}
 
         {/* CTA Section */}
         <motion.div
