@@ -105,51 +105,6 @@ export const workExperienceData = [
     }
   },
   {
-    id: "c4gt",
-    company: "Code for GovTech (C4GT) 24",
-    position: "Full Stack Intern @ MeitY",
-    location: "Delhi, India (Remote)",
-    duration: "Jun 2024 - Oct 2024",
-    logo: "🏛️",
-    color: "from-green-600 to-emerald-600",
-    gradient: "from-green-600 via-emerald-500 to-teal-500",
-    shortDescription: "Built an open sourced custom CMS for the iGOT platform supporting 22 languages",
-    achievements: [
-      "Built an open sourced custom CMS for the iGOT platform supporting 22 languages, enabling SPVs to manage multilingual content dynamically"
-    ],
-    tech: ["Full Stack", "CMS", "Multilingual", "Open Source"],
-    metrics: [
-      { label: "Languages Supported", value: "22", icon: "🌍" },
-      { label: "Open Source", value: "100%", icon: "📖" },
-      { label: "Government Impact", value: "High", icon: "🏛️" },
-      { label: "Content Management", value: "Dynamic", icon: "⚙️" }
-    ],
-    keyProjects: [
-      {
-        name: "Multilingual CMS Platform",
-        description: "Developed a custom content management system for government training platform",
-        impact: "Enabled seamless content management in 22 languages for government officials",
-        tech: ["React", "Node.js", "MongoDB", "i18n"]
-      }
-    ],
-    challenges: [
-      "Implementing multilingual support for complex government content",
-      "Ensuring accessibility and compliance with government standards",
-      "Building scalable architecture for large user base"
-    ],
-    learnings: [
-      "Government technology development",
-      "Multilingual application architecture",
-      "Open source contribution to public sector"
-    ],
-    companyInfo: {
-      industry: "Government Technology",
-      organization: "Ministry of Electronics and IT",
-      impact: "National Level",
-      description: "C4GT is an initiative to build open source solutions for government technology challenges."
-    }
-  },
-  {
     id: "gsoc-2023",
     company: "Google Summer of Code 23",
     position: "Open Source Developer @ The Tor Project",
@@ -207,6 +162,51 @@ export const workExperienceData = [
       organization: "The Tor Project",
       mission: "Advancing human rights and freedoms by creating and deploying free and open source anonymity and privacy technologies",
       description: "The Tor Project develops free and open source software for anonymous communication."
+    }
+  },
+  {
+    id: "c4gt",
+    company: "Code for GovTech (C4GT) 24",
+    position: "Full Stack Intern @ MeitY",
+    location: "Delhi, India (Remote)",
+    duration: "Jun 2024 - Oct 2024",
+    logo: "🏛️",
+    color: "from-green-600 to-emerald-600",
+    gradient: "from-green-600 via-emerald-500 to-teal-500",
+    shortDescription: "Built an open sourced custom CMS for the iGOT platform supporting 22 languages",
+    achievements: [
+      "Built an open sourced custom CMS for the iGOT platform supporting 22 languages, enabling SPVs to manage multilingual content dynamically"
+    ],
+    tech: ["Full Stack", "CMS", "Multilingual", "Open Source"],
+    metrics: [
+      { label: "Languages Supported", value: "22", icon: "🌍" },
+      { label: "Open Source", value: "100%", icon: "📖" },
+      { label: "Government Impact", value: "High", icon: "🏛️" },
+      { label: "Content Management", value: "Dynamic", icon: "⚙️" }
+    ],
+    keyProjects: [
+      {
+        name: "Multilingual CMS Platform",
+        description: "Developed a custom content management system for government training platform",
+        impact: "Enabled seamless content management in 22 languages for government officials",
+        tech: ["React", "Node.js", "MongoDB", "i18n"]
+      }
+    ],
+    challenges: [
+      "Implementing multilingual support for complex government content",
+      "Ensuring accessibility and compliance with government standards",
+      "Building scalable architecture for large user base"
+    ],
+    learnings: [
+      "Government technology development",
+      "Multilingual application architecture",
+      "Open source contribution to public sector"
+    ],
+    companyInfo: {
+      industry: "Government Technology",
+      organization: "Ministry of Electronics and IT",
+      impact: "National Level",
+      description: "C4GT is an initiative to build open source solutions for government technology challenges."
     }
   },
   {
