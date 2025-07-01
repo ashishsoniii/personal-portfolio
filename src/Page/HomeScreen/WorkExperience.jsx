@@ -69,6 +69,15 @@ const WorkExperience = () => {
                     {/* Background Glow */}
                     <div className={`absolute inset-0 bg-gradient-to-r ${experience.color} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500 rounded-2xl`}></div>
                     
+                    {/* Open Source Badge for Compact Cards */}
+                    {(experience.company.includes("Google Summer of Code") || experience.company.includes("C4GT") || experience.company.includes("Code for GovTech")) && (
+                      <div className="absolute -top-3 -right-3 z-10">
+                        <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg border border-white/20">
+                          🌐 Open Source
+                        </div>
+                      </div>
+                    )}
+                    
                     {/* Compact Card */}
                     <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-6 hover:border-gray-600/50 transition-all duration-300 group-hover:scale-105">
                       {/* Header */}

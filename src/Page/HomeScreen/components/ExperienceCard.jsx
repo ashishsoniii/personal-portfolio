@@ -4,6 +4,8 @@ import { FaArrowRight } from "react-icons/fa";
 import PropTypes from "prop-types";
 
 const ExperienceCard = ({ experience }) => {
+  const isOpenSource = experience.company.includes("Google Summer of Code") || experience.company.includes("C4GT") || experience.company.includes("Code for GovTech");
+  
   return (
     <motion.div
       whileHover={{ 
@@ -14,6 +16,15 @@ const ExperienceCard = ({ experience }) => {
     >
       {/* Background Glow Effect */}
       <div className={`absolute inset-0 bg-gradient-to-r ${experience.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-3xl`}></div>
+      
+      {/* Open Source Badge */}
+      {isOpenSource && (
+        <div className="absolute -top-3 -right-3 z-10">
+          <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg border-2 border-white/20">
+            🌐 Open Source
+          </div>
+        </div>
+      )}
       
       {/* Main Card */}
       <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 hover:border-gray-600/50 transition-all duration-500">
