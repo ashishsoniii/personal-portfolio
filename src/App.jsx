@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import LandingPage from "./Page/HomeScreen/LandingPage.jsx";
 import WorkExperience from "./Page/HomeScreen/WorkExperience.jsx";
 import ExperienceDetail from "./Page/ExperienceDetail/ExperienceDetail.jsx";
+import SocialProfile from "./components/SocialProfile.jsx";
 // import Gsoc from "./Page/Gsoc/Gsoc";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/experience" element={<WorkExperience />} />
           <Route exact path="/experience/:id" element={<ExperienceDetail />} />
+          <Route exact path="/social" element={<SocialProfile />} />
           {/* <Route exact path="/gsoc" element={<Gsoc />} /> */}
           {/* <Route exact path="/" element={<HomePage2 />} /> */}
 

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaHome, FaBars, FaTimes } from "react-icons/fa";
+import { FaHome, FaBars, FaTimes, FaGithub } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiOutlineNewspaper } from "react-icons/hi";
 import { Link } from "react-router-dom";
@@ -20,6 +20,12 @@ function Navbar() {
       label: "Experience",
       icon: <HiOutlineNewspaper className="mr-2 text-2xl" />,
       to: "/experience",
+      type: "link",
+    },
+    {
+      label: "Social",
+      icon: <FaGithub className="mr-2 text-2xl" />,
+      to: "/social",
       type: "link",
     },
     {
