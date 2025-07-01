@@ -86,7 +86,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 w-full flex flex-col items-cente overflow-hidden">
+    <nav className="sticky top-0 z-50 w-full flex flex-col items-cente">
       <div className="w-full h-1 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 opacity-80 rounded-b-2xl mb-1" />
       {/* Mobile: Dynamic Island */}
       <div className="block sm:hidden w-full flex justify-center items-center pt-4 px-4 absolute top-0 left-0 z-50">
