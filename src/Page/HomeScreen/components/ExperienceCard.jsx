@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -80,26 +83,42 @@ const ExperienceCard = ({ experience }) => {
           </ul>
         </div>
 
-        {/* Tech Stack Section */}
+        {/* Tech Stack Section and View Details Button - Side by Side */}
         <div className="border-t border-gray-700/50 pt-6">
-          <h4 className="text-lg font-semibold text-gray-300 mb-4 flex items-center">
-            <svg className="w-5 h-5 mr-2 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-            </svg>
-            Technologies Used
-          </h4>
-          <div className="flex flex-wrap gap-2">
-            {experience.tech.map((tech, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-                className={`px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${experience.color} text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105`}
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+            {/* Tech Stack */}
+            <div className="flex-1">
+              <h4 className="text-lg font-semibold text-gray-300 mb-4 flex items-center">
+                <svg className="w-5 h-5 mr-2 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                </svg>
+                Technologies Used
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {experience.tech.map((tech, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    className={`px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${experience.color} text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105`}
+                  >
+                    {tech}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
+
+            {/* View Details Button */}
+            <div className="flex-shrink-0">
+              <Link
+                to={`/experience/${experience.id}`}
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
               >
-                {tech}
-              </motion.span>
-            ))}
+                View Full Details
+                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -108,6 +127,20 @@ const ExperienceCard = ({ experience }) => {
       </div>
     </motion.div>
   );
+};
+
+ExperienceCard.propTypes = {
+  experience: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    company: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    duration: PropTypes.string.isRequired,
+    logo: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    achievements: PropTypes.arrayOf(PropTypes.string).isRequired,
+    tech: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 };
 
 export default ExperienceCard; 

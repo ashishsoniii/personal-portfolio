@@ -1,82 +1,9 @@
 import { motion } from "framer-motion";
 import ExperienceCard from "./components/ExperienceCard";
+import { workExperienceData } from "../../data/workExperienceData";
 
 const WorkExperience = () => {
-  const experiences = [
-    {
-      id: 1,
-      company: "ClearFeed",
-      position: "Member of Technical Staff",
-      location: "Bangalore, India",
-      duration: "Nov 2024 - Present",
-      logo: "🚀",
-      color: "from-purple-600 to-pink-600",
-      achievements: [
-        "Building Clearfeed's core product that makes support as easy and fast as chatting",
-        "Built and shipped 50+ features and improvements — including dark mode and passwordless login via magic links",
-        "Improved front-end performance by refactoring UI components and using memoization & caching technique, reducing load time by 40%",
-        "Contributed 160+ commits in 6 months on GitHub, becoming one of the top 5 committers in a fast-paced development environment"
-      ],
-      tech: ["React", "TypeScript", "Node.js", "GitHub"]
-    },
-    {
-      id: 2,
-      company: "GAP INC.",
-      position: "iOS Developer Intern",
-      location: "Hyderabad, India",
-      duration: "July 2024 - Aug 2024",
-      logo: "🍎",
-      color: "from-blue-600 to-cyan-600",
-      achievements: [
-        "Developed 10+ reusable SwiftUI components for Gap's Old Navy app, significantly improving user experience, interface consistency, and code maintainability"
-      ],
-      tech: ["SwiftUI", "iOS", "Xcode", "Git"]
-    },
-    {
-      id: 3,
-      company: "Code for GovTech (C4GT) 24",
-      position: "Full Stack Intern @ MeitY",
-      location: "Delhi, India (Remote)",
-      duration: "Jun 2024 - Oct 2024",
-      logo: "🏛️",
-      color: "from-green-600 to-emerald-600",
-      achievements: [
-        "Built an open sourced custom CMS for the iGOT platform supporting 22 languages, enabling SPVs to manage multilingual content dynamically"
-      ],
-      tech: ["Full Stack", "CMS", "Multilingual", "Open Source"]
-    },
-    {
-      id: 4,
-      company: "Google Summer of Code 23",
-      position: "Open Source Developer @ The Tor Project",
-      location: "Winchester, Massachusetts (Remote)",
-      duration: "Jun 2023 - Sep 2023",
-      logo: "🌐",
-      color: "from-orange-600 to-red-600",
-      achievements: [
-        "Translated Figma designs into a responsive, pixel-perfect UI, boosting user engagement by 40% and reducing bounce rate by 25% within 5 months",
-        "Implemented the website using Lektor CMS, cutting content update and maintenance time",
-        "Used HTML, CSS, and Bootstrap to build a clean, accessible, & performance-optimized UI",
-        "Collaborated with global contributors on GitLab to maintain code quality and align UI implementation with The Tor Project's design and privacy guidelines"
-      ],
-      tech: ["HTML", "CSS", "Bootstrap", "Lektor CMS", "GitLab"]
-    },
-    {
-      id: 5,
-      company: "YogLabs",
-      position: "Frontend Developer (Part Time)",
-      location: "Jaipur, Rajasthan (Remote)",
-      duration: "Jan 2023 - Jun 2023",
-      logo: "⚡",
-      color: "from-indigo-600 to-purple-600",
-      achievements: [
-        "Enhanced 3 pre-built dashboards by fixing 10+ critical bugs and adding 4+ key features to improve usability and performance",
-        "Built and integrated a Flask backend, improving functionality and user data management",
-        "Developed CI/CD pipelines and deployed 4 projects on AWS S3"
-      ],
-      tech: ["Frontend", "Flask", "AWS S3", "CI/CD"]
-    }
-  ];
+  const experiences = workExperienceData;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20 px-4">

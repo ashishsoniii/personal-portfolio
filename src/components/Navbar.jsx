@@ -17,6 +17,12 @@ function Navbar() {
       type: "link",
     },
     {
+      label: "Experience",
+      icon: <HiOutlineNewspaper className="mr-2 text-2xl" />,
+      to: "/experience",
+      type: "link",
+    },
+    {
       label: "Portfolio",
       icon: <HiOutlineNewspaper className="mr-2 text-2xl" />,
       to: "https://drive.google.com/file/d/1Jx-An1OjOXvJWS6vQjvCO40sJ_Q54Sfb/view?usp=drive_link",
