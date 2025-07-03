@@ -106,7 +106,7 @@ function Navbar() {
           ref={pillRef}
           animate={menuOpen ? "open" : "closed"}
           variants={pillVariants}
-          className="relative bg-gradient-to-r from-purple-700/80 via-pink-600/80 to-blue-600/80 shadow-2xl border border-white/30 flex flex-col items-stretch px-4 w-full max-w-[300px] overflow-hidden max-h-[80vh] rounded-3xl backdrop-blur-md"
+          className="relative z-50 bg-gradient-to-r from-purple-700/80 via-pink-600/80 to-blue-600/80 shadow-2xl border border-white/30 flex flex-col items-stretch px-4 w-full max-w-[300px] overflow-hidden max-h-[80vh] rounded-3xl backdrop-blur-md"
         >
           <div className="flex items-center w-full pt-2">
             <span className="text-white font-extrabold text-lg flex-1 pl-2 select-none">
