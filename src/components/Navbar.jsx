@@ -106,7 +106,7 @@ function Navbar() {
           ref={pillRef}
           animate={menuOpen ? "open" : "closed"}
           variants={pillVariants}
-          className="relative bg-gradient-to-r from-purple-700/80 via-pink-600/80 to-blue-600/80 shadow-2xl border border-white/30 flex flex-col items-stretch px-4 w-full max-w-[360px] overflow-hidden max-h-[80vh] rounded-3xl backdrop-blur-md"
+          className="relative bg-gradient-to-r from-purple-700/80 via-pink-600/80 to-blue-600/80 shadow-2xl border border-white/30 flex flex-col items-stretch px-4 w-full max-w-[300px] overflow-hidden max-h-[80vh] rounded-3xl backdrop-blur-md"
         >
           <div className="flex items-center w-full pt-2">
             <span className="text-white font-extrabold text-lg flex-1 pl-2 select-none">
@@ -171,7 +171,7 @@ function Navbar() {
       {/* Desktop nav */}
       <div className="w-full flex justify-center items-center px-2 py-4 hidden sm:flex overflow-hidden absolute top-1 left-0 z-40">
         <div
-          className="flex flex-wrap justify-center items-center space-x-2 md:space-x-4 rounded-full px-4 md:px-6 py-2 shadow-2xl border border-white/30 bg-gradient-to-r from-purple-700/60 via-pink-500/40 to-blue-500/40 backdrop-blur-md w-full max-w-5xl mx-auto overflow-x-auto overflow-y-hidden"
+          className="flex flex-wrap justify-center items-center space-x-2 md:space-x-4 rounded-full px-4 md:px-6 py-2 shadow-2xl border border-white/30 bg-gradient-to-r from-purple-700/60 via-pink-500/40 to-blue-500/40 backdrop-blur-md w-full max-w-xl mx-auto overflow-x-auto overflow-y-hidden"
         >
           {navLinks.map((item, i) => (
             <motion.div
