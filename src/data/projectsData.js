@@ -8,7 +8,7 @@ export const projectsData = [
     shortTitle: "NLF WEBAPP",
     description: "Comprehensive gym management system for 300+ members",
     fullDescription: "A full-stack web application designed to streamline gym operations, automate administrative tasks, and enhance member experience through digital transformation.",
-    image: "/src/assets/ashish.jpg", // Replace with actual project screenshots
+    image: "/project-imgs/portfolio.png", // Updated image
     status: "Completed",
     impact: {
       members: "300+",
@@ -41,7 +41,7 @@ export const projectsData = [
     shortTitle: "RAJ POLICE",
     description: "Citizen feedback and analytics platform for police department",
     fullDescription: "A dual-platform system consisting of a citizen feedback portal and an administrative analytics dashboard, designed to improve police-citizen communication and data-driven decision making.",
-    image: "/src/assets/ashish2.jpg",
+    image: "/project-imgs/portfolio.png", // Updated image
     status: "Completed",
     impact: {
       manualWork: "40%",
@@ -72,7 +72,7 @@ export const projectsData = [
     shortTitle: "RASYOG",
     description: "Fashion analytics platform for Indian market insights",
     fullDescription: "A data-driven fashion analytics application that provides comprehensive insights into Indian fashion trends, product categories, and market analysis through interactive visualizations.",
-    image: "/src/assets/ashish3.jpg",
+    image: "/project-imgs/portfolio.png", // Updated image
     status: "Completed",
     impact: {
       market: "Indian Fashion",
@@ -101,7 +101,7 @@ export const projectsData = [
     shortTitle: "KITTY BEES",
     description: "E-commerce chatbot for enhanced customer experience",
     fullDescription: "An integrated chatbot solution for an e-commerce platform, providing automated customer support and enhancing the overall shopping experience through intelligent query handling.",
-    image: "/src/assets/ashish4.jpg",
+    image: "/project-imgs/portfolio.png", // Updated image
     status: "Completed",
     impact: {
       platform: "E-commerce",
@@ -127,7 +127,7 @@ export const projectsData = [
     shortTitle: "DOVEY COUTURE",
     description: "Self-hosted e-commerce platform for fashion designer",
     fullDescription: "A comprehensive e-commerce solution being developed from scratch, including backend infrastructure, storefront UI, admin dashboard, and complete shopping functionality for a fashion designer's online store.",
-    image: "/src/assets/ashish.jpg",
+    image: "/project-imgs/portfolio.png", // Updated image
     status: "In Progress",
     impact: {
       platform: "Self-hosted",
