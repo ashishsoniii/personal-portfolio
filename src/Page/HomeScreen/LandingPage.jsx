@@ -2,6 +2,7 @@ import HomePage from './HomePage'
 import AboutMe from './AboutMe'
 import HeroExt from './HeroExt'
 import WorkExperience from './WorkExperience'
+import ProjectsSection from '../../components/ProjectsSection'
 import SocialCards from '../../components/SocialCards'
 
 const LandingPage = () => {
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <HeroExt />
       <AboutMe />
       <WorkExperience />
+      <ProjectsSection />
       <SocialCards />
     </div>
   )

@@ -144,26 +144,6 @@ const WorkExperience = () => {
             </motion.div>
           )}
         </div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-center mt-20"
-        >
-          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-3xl p-8 border border-purple-500/30">
-            <h3 className="text-3xl font-bold text-white mb-4">
-              Ready to Build Something Amazing?
-            </h3>
-            <p className="text-gray-300 text-lg mb-6">
-              Let&apos;s create the next generation of digital experiences together.
-            </p>
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-              Let&apos;s Connect
-            </button>
-          </div>
-        </motion.div>
       </div>
     </div>
   );
