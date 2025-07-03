@@ -7,26 +7,26 @@ const WorkExperience = () => {
   const experiences = workExperienceData;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-12 sm:py-16 md:py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent mb-4 sm:mb-6">
             Experience
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Crafting digital experiences that leave lasting impressions. 
             From startups to tech giants, every project tells a story of innovation and excellence.
           </p>
         </motion.div>
 
         {/* Experience Cards */}
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           {/* First 3 Full Cards */}
           {experiences.slice(0, 3).map((experience, index) => (
             <motion.div
@@ -48,10 +48,10 @@ const WorkExperience = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
             >
-              <h3 className="text-3xl font-bold text-white mb-8 text-center">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">
                 More Amazing Experiences
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {experiences.slice(3).map((experience, index) => (
                   <motion.div
                     key={experience.id}
@@ -79,17 +79,17 @@ const WorkExperience = () => {
                     )}
                     
                     {/* Compact Card */}
-                    <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-6 hover:border-gray-600/50 transition-all duration-300 group-hover:scale-105">
+                    <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-4 sm:p-6 hover:border-gray-600/50 transition-all duration-300 group-hover:scale-105">
                       {/* Header */}
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className={`flex-shrink-0 w-12 h-12 bg-gradient-to-br ${experience.color} rounded-xl flex items-center justify-center text-xl shadow-lg`}>
+                      <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${experience.color} rounded-xl flex items-center justify-center text-lg sm:text-xl shadow-lg`}>
                           {experience.logo}
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-lg font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+                          <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                             {experience.company}
                           </h3>
-                          <p className="text-sm text-purple-300 font-semibold">{experience.position}</p>
+                          <p className="text-xs sm:text-sm text-purple-300 font-semibold">{experience.position}</p>
                         </div>
                         {/* Excitement Badge */}
                         <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
@@ -100,28 +100,28 @@ const WorkExperience = () => {
                       </div>
                       
                       {/* Quick Info */}
-                      <div className="flex items-center gap-4 text-gray-400 text-sm mb-4">
+                      <div className="flex items-center gap-2 sm:gap-4 text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4">
                         <span>📍 {experience.location}</span>
                         <span>📅 {experience.duration}</span>
                       </div>
                       
                       {/* Key Achievement */}
-                      <p className="text-gray-300 text-sm mb-4 line-clamp-2">
+                      <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
                         {experience.shortDescription}
                       </p>
                       
                       {/* Tech Stack */}
-                      <div className="flex flex-wrap gap-2 mb-4">
+                      <div className="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
                         {experience.tech.slice(0, 3).map((tech, techIndex) => (
                           <span
                             key={techIndex}
-                            className={`px-2 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${experience.color} text-white shadow-md`}
+                            className={`px-1 sm:px-2 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${experience.color} text-white shadow-md`}
                           >
                             {tech}
                           </span>
                         ))}
                         {experience.tech.length > 3 && (
-                          <span className="px-2 py-1 rounded-full text-xs font-medium bg-gray-700/50 text-gray-300">
+                          <span className="px-1 sm:px-2 py-1 rounded-full text-xs font-medium bg-gray-700/50 text-gray-300">
                             +{experience.tech.length - 3} more
                           </span>
                         )}

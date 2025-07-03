@@ -48,17 +48,17 @@ const ExperienceDetail = () => {
         <div className={`absolute inset-0 bg-gradient-to-br ${experience.gradient} opacity-20`} />
         
         {/* Content */}
-        <div className="relative z-10 pt-28 pb-16 px-4">
+        <div className="relative z-10 pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-16 px-4">
           <div className="max-w-7xl mx-auto">
             {/* Back Button */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="mb-8"
+              className="mb-6 sm:mb-8"
             >
               <Link
                 to="/experience"
-                className="inline-flex items-center text-white/80 hover:text-white transition-colors duration-300"
+                className="inline-flex items-center text-white/80 hover:text-white transition-colors duration-300 text-sm sm:text-base"
               >
                 <FaArrowLeft className="mr-2" />
                 Back to Experience
@@ -69,16 +69,16 @@ const ExperienceDetail = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-center mb-12"
+              className="text-center mb-8 sm:mb-12"
             >
-              <div className="text-8xl mb-6">{experience.logo}</div>
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
+              <div className="text-4xl sm:text-6xl md:text-8xl mb-4 sm:mb-6">{experience.logo}</div>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 sm:mb-4">
                 {experience.company}
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-2">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-300 mb-2">
                 {experience.position}
               </h2>
-              <div className="flex flex-wrap justify-center items-center gap-4 text-gray-400 text-lg">
+              <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-gray-400 text-sm sm:text-base md:text-lg">
                 <span>📍 {experience.location}</span>
                 <span>•</span>
                 <span>📅 {experience.duration}</span>
@@ -96,57 +96,57 @@ const ExperienceDetail = () => {
         className="max-w-7xl mx-auto px-4 pb-20"
       >
         {/* Metrics Grid */}
-        <motion.div variants={itemVariants} className="mb-16 mt-8">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">
+        <motion.div variants={itemVariants} className="mb-12 sm:mb-16 mt-6 sm:mt-8">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">
             Key Metrics & Impact
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
             {experience.metrics.map((metric, index) => (
               <motion.div
                 key={metric.label}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 text-center hover:scale-105 transition-transform duration-300"
+                className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-3 sm:p-6 border border-gray-700/50 text-center hover:scale-105 transition-transform duration-300"
               >
-                <div className="text-4xl mb-2">{metric.icon}</div>
-                <div className="text-2xl font-bold text-white mb-1">{metric.value}</div>
-                <div className="text-gray-400 text-sm">{metric.label}</div>
+                <div className="text-2xl sm:text-4xl mb-1 sm:mb-2">{metric.icon}</div>
+                <div className="text-lg sm:text-2xl font-bold text-white mb-1">{metric.value}</div>
+                <div className="text-gray-400 text-xs sm:text-sm">{metric.label}</div>
               </motion.div>
             ))}
           </div>
         </motion.div>
 
         {/* Key Projects */}
-        <motion.div variants={itemVariants} className="mb-16">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">
+        <motion.div variants={itemVariants} className="mb-12 sm:mb-16">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">
             Key Projects & Contributions
           </h3>
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {experience.keyProjects.map((project, index) => (
               <motion.div
                 key={project.name}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-gradient-to-r from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300"
+                className="bg-gradient-to-r from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-3xl p-4 sm:p-6 md:p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300"
               >
-                <div className="flex flex-col lg:flex-row lg:items-start gap-6">
+                <div className="flex flex-col lg:flex-row lg:items-start gap-4 sm:gap-6">
                   <div className="flex-1">
-                    <h4 className="text-2xl font-bold text-white mb-3">{project.name}</h4>
-                    <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
-                    <div className="bg-green-500/20 border border-green-500/30 rounded-xl p-4 mb-4">
-                      <h5 className="text-green-400 font-semibold mb-1">Impact</h5>
-                      <p className="text-green-300">{project.impact}</p>
+                    <h4 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">{project.name}</h4>
+                    <p className="text-gray-300 mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base">{project.description}</p>
+                    <div className="bg-green-500/20 border border-green-500/30 rounded-xl p-3 sm:p-4 mb-3 sm:mb-4">
+                      <h5 className="text-green-400 font-semibold mb-1 text-sm sm:text-base">Impact</h5>
+                      <p className="text-green-300 text-sm sm:text-base">{project.impact}</p>
                     </div>
                   </div>
                   <div className="lg:w-48">
-                    <h5 className="text-gray-400 font-semibold mb-3">Technologies Used</h5>
-                    <div className="flex flex-wrap gap-2">
+                    <h5 className="text-gray-400 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Technologies Used</h5>
+                    <div className="flex flex-wrap gap-1 sm:gap-2">
                       {project.tech.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-full text-sm text-purple-300"
+                          className="px-2 sm:px-3 py-1 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-full text-xs sm:text-sm text-purple-300"
                         >
                           {tech}
                         </span>
@@ -160,11 +160,11 @@ const ExperienceDetail = () => {
         </motion.div>
 
         {/* Achievements & Technologies */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {/* Achievements */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-3xl font-bold text-white mb-6">Major Achievements</h3>
-            <div className="space-y-4">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Major Achievements</h3>
+            <div className="space-y-3 sm:space-y-4">
               {experience.achievements.map((achievement, index) => (
                 <motion.div
                   key={index}
@@ -172,10 +172,10 @@ const ExperienceDetail = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex items-start gap-3"
+                  className="flex items-start gap-2 sm:gap-3"
                 >
                   <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-gray-300 leading-relaxed">{achievement}</p>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">{achievement}</p>
                 </motion.div>
               ))}
             </div>
@@ -183,8 +183,8 @@ const ExperienceDetail = () => {
 
           {/* Technologies */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-3xl font-bold text-white mb-6">Technologies & Tools</h3>
-            <div className="grid grid-cols-2 gap-3">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Technologies & Tools</h3>
+            <div className="grid grid-cols-2 gap-2 sm:gap-3">
               {experience.tech.map((tech, index) => (
                 <motion.div
                   key={tech}
@@ -192,9 +192,9 @@ const ExperienceDetail = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05 }}
-                  className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 border border-gray-700/50 rounded-xl p-4 text-center hover:scale-105 transition-transform duration-300"
+                  className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 border border-gray-700/50 rounded-xl p-3 sm:p-4 text-center hover:scale-105 transition-transform duration-300"
                 >
-                  <div className="text-white font-semibold">{tech}</div>
+                  <div className="text-white font-semibold text-sm sm:text-base">{tech}</div>
                 </motion.div>
               ))}
             </div>

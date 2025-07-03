@@ -61,7 +61,7 @@ const SocialCards = () => {
         </motion.div>
 
         {/* Social Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {socialLinks.map((link, index) => (
             <motion.div
               key={link.name}
@@ -79,17 +79,17 @@ const SocialCards = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`relative block bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 hover:border-gray-600/50 transition-all duration-500 group-hover:scale-105`}
+                className={`relative block bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-6 sm:p-8 hover:border-gray-600/50 transition-all duration-500 group-hover:scale-105`}
                 whileHover={{ y: -10 }}
               >
                 <div className="text-center">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${link.color} rounded-2xl mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-300`}>
+                  <div className={`inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${link.color} rounded-2xl mb-4 sm:mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-300`}>
                     {link.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                     {link.name}
                   </h3>
-                  <p className="text-gray-400 mb-4">{link.description}</p>
+                  <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">{link.description}</p>
                   <div className="flex items-center justify-center gap-2 text-purple-400 group-hover:text-purple-300 transition-colors">
                     <span className="text-sm font-semibold">Visit Profile</span>
                     <FaExternalLinkAlt className="text-sm group-hover:translate-x-1 transition-transform duration-300" />
@@ -110,24 +110,24 @@ const SocialCards = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-3xl p-8 border border-purple-500/30">
-            <h3 className="text-3xl font-bold text-white mb-4">
+          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-3xl p-4 sm:p-6 md:p-8 border border-purple-500/30">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">
               Ready to Build Something Amazing?
             </h3>
-            <p className="text-gray-300 text-lg mb-6">
+            <p className="text-gray-300 text-base sm:text-lg mb-4 sm:mb-6">
               Let&apos;s create the next generation of digital experiences together.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
               <a
                 href="mailto:ashish.soni@example.com"
-                className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-sm sm:text-base"
               >
                 <BsFillTelephoneFill />
                 Get in Touch
               </a>
               <a
                 href="/social"
-                className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-sm sm:text-base"
               >
                 <FaGithub />
                 View Full Profile
