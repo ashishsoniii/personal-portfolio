@@ -25,7 +25,11 @@ const MobileHero = () => {
         </h1>
         {/* Tagline */}
         <p className="text-base font-medium text-white/90 mb-4 text-center px-2">
-          Building <span className="bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">crazy cool</span> mobile-first websites!
+          Building{" "}
+          <span className="bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">
+            crazy cool
+          </span>{" "}
+          mobile-first websites!
         </p>
         {/* Call to action */}
         <a
@@ -39,4 +43,4 @@ const MobileHero = () => {
   );
 };
 
-export default MobileHero; 
+export default MobileHero;
