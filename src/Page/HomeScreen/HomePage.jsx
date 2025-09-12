@@ -41,7 +41,11 @@ function HomePage() {
                 transition={{ duration: 1, delay: 0.6 }}
                 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-white/90 mb-6 drop-shadow"
               >
-                Building modern, mobile-first websites that make a <span className="bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">lasting impression</span>!
+                Building modern, mobile-first websites that make a{" "}
+                <span className="bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">
+                  lasting impression
+                </span>
+                !
               </motion.p>
               <motion.button
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -49,7 +53,7 @@ function HomePage() {
                 transition={{ duration: 0.7, delay: 0.8 }}
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border-2 border-white/20"
               >
-                Web Developer
+                Full Stack Engineer
               </motion.button>
             </div>
             {/* Right: Photo */}
