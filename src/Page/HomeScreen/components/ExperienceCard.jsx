@@ -4,19 +4,28 @@ import { FaArrowRight } from "react-icons/fa";
 import PropTypes from "prop-types";
 
 const ExperienceCard = ({ experience }) => {
-  const isOpenSource = experience.company.includes("Google Summer of Code") || experience.company.includes("C4GT") || experience.company.includes("Code for GovTech");
-  
+  const isOpenSource =
+    experience.company.includes("Google Summer of Code") ||
+    experience.company.includes("C4GT") ||
+    experience.company.includes("Code for GovTech");
+
+  const techList = Array.isArray(experience.tech) ? experience.tech : [];
+  const visibleTech = techList.slice(0, 6);
+  const hiddenTech = techList.slice(6);
+
   return (
     <motion.div
-      whileHover={{ 
+      whileHover={{
         scale: 1.02,
-        transition: { duration: 0.3 }
+        transition: { duration: 0.3 },
       }}
-      className="group relative"
+      className="group relative z-0 hover:z-[1000] focus-within:z-[1000]"
     >
       {/* Background Glow Effect */}
-      <div className={`absolute inset-0 bg-gradient-to-r ${experience.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-3xl`}></div>
-      
+      <div
+        className={`absolute inset-0 bg-gradient-to-r ${experience.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-3xl`}
+      ></div>
+
       {/* Open Source Badge */}
       {isOpenSource && (
         <div className="absolute -top-3 -right-3 z-10">
@@ -25,18 +34,19 @@ const ExperienceCard = ({ experience }) => {
           </div>
         </div>
       )}
-      
+
       {/* Main Card */}
-      <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-4 sm:p-6 md:p-8 hover:border-gray-600/50 transition-all duration-500">
-        
+      <div className="relative overflow-visible bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-4 sm:p-6 md:p-8 hover:border-gray-600/50 transition-all duration-500">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4 sm:mb-6">
           <div className="flex items-start space-x-3 sm:space-x-4 mb-4 lg:mb-0">
             {/* Company Logo */}
-            <div className={`flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br ${experience.color} rounded-2xl flex items-center justify-center text-xl sm:text-2xl shadow-lg`}>
+            <div
+              className={`flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br ${experience.color} rounded-2xl flex items-center justify-center text-xl sm:text-2xl shadow-lg`}
+            >
               {experience.logo}
             </div>
-            
+
             {/* Company Info */}
             <div className="flex-1">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
@@ -47,24 +57,42 @@ const ExperienceCard = ({ experience }) => {
               </p>
               <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-gray-400 text-sm sm:text-base">
                 <span className="flex items-center">
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  <svg
+                    className="w-3 h-3 sm:w-4 sm:h-4 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                   {experience.location}
                 </span>
                 <span className="flex items-center">
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                  <svg
+                    className="w-3 h-3 sm:w-4 sm:h-4 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                   {experience.duration}
                 </span>
               </div>
             </div>
           </div>
-          
+
           {/* Status Badge */}
           <div className="flex-shrink-0">
-            <span className={`inline-flex items-center px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${experience.color} text-white shadow-lg`}>
+            <span
+              className={`inline-flex items-center px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r ${experience.color} text-white shadow-lg`}
+            >
               {experience.duration.includes("Present") ? "Active" : "Completed"}
             </span>
           </div>
@@ -73,8 +101,16 @@ const ExperienceCard = ({ experience }) => {
         {/* Achievements Section */}
         <div className="mb-4 sm:mb-6">
           <h4 className="text-base sm:text-lg font-semibold text-gray-300 mb-3 sm:mb-4 flex items-center">
-            <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            <svg
+              className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-purple-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clipRule="evenodd"
+              />
             </svg>
             Key Achievements
           </h4>
@@ -100,15 +136,23 @@ const ExperienceCard = ({ experience }) => {
             {/* Tech Stack */}
             <div className="flex-1">
               <h4 className="text-base sm:text-lg font-semibold text-gray-300 mb-3 sm:mb-4 flex items-center">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                <svg
+                  className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-purple-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clipRule="evenodd"
+                  />
                 </svg>
                 Technologies Used
               </h4>
               <div className="flex flex-wrap gap-1 sm:gap-2">
-                {experience.tech.map((tech, index) => (
+                {visibleTech.map((tech, index) => (
                   <motion.span
-                    key={index}
+                    key={tech}
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
@@ -117,6 +161,29 @@ const ExperienceCard = ({ experience }) => {
                     {tech}
                   </motion.span>
                 ))}
+                {hiddenTech.length > 0 && (
+                  <div className="relative flex items-center justify-center z-[999] group">
+                    <div className="px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r from-purple-600/30 to-pink-600/30 border border-purple-500/40 text-purple-200 cursor-default">
+                      +{hiddenTech.length} more
+                    </div>
+                    <div className="pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 absolute left-1/2 -translate-x-1/2 top-full mt-2 z-[999]">
+                      <div className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-xl border border-gray-700/60 rounded-2xl shadow-2xl p-3 sm:p-4 min-w-[220px]">
+                        <div className="grid grid-cols-2 gap-2">
+                          {hiddenTech.map((tech) => (
+                            <div
+                              key={tech}
+                              className="bg-gradient-to-r from-gray-800/60 to-gray-900/60 border border-gray-700/60 rounded-full px-2.5 py-1.5 text-center"
+                            >
+                              <span className="text-white text-xs sm:text-sm font-medium">
+                                {tech}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -154,4 +221,4 @@ ExperienceCard.propTypes = {
   }).isRequired,
 };
 
-export default ExperienceCard; 
+export default ExperienceCard;

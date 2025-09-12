@@ -24,9 +24,22 @@ const AboutMe = () => {
             Dream. Build. Inspire.
           </div>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/90 leading-relaxed font-medium">
-            I&apos;m a passionate <span className="font-bold text-pink-400">frontend developer</span> who loves turning bold ideas into beautiful, high-performance web experiences.<br className="hidden md:block" />
-            From open source to startups, I thrive on building products that make people say <span className="font-bold text-purple-400">&quot;wow!&quot;</span>.<br className="hidden md:block" />
-            Always learning, always shipping, always pushing the limits of what&apos;s possible in the browser.
+            I&apos;m a{" "}
+            <span className="font-bold text-pink-400">frontend engineer</span>{" "}
+            who ships fast with craft.
+            <br className="hidden md:block" />
+            Recently at{" "}
+            <span className="font-bold text-purple-400">ClearFeed</span>, I
+            worked across the core webapp, customer portal, and a new
+            webchat—shipping{" "}
+            <span className="font-bold">100+ improvements</span> in weeks, from
+            dark mode and passwordless login to performance tuning (
+            <span className="font-bold">-40% load time</span>).
+            <br className="hidden md:block" />I use an{" "}
+            <span className="font-bold text-pink-400">AI-first workflow</span>{" "}
+            (Cursor, MCP agents, Cubic) to move quickly without sacrificing
+            quality. From open source to startups, I build delightful, reliable
+            products.
           </p>
         </div>
       </motion.div>
