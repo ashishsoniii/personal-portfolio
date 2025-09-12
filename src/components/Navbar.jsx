@@ -3,11 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiOutlineNewspaper } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pillRef = useRef(null);
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   const navLinks = [
     {
@@ -24,10 +26,10 @@ function Navbar() {
       target: "__blank",
     },
     {
-      label: "Contact Us",
+      label: "Contact Me",
       icon: <BsFillTelephoneFill className="mr-2 text-2xl" />,
-      to: "../#contact",
-      type: "a",
+      to: "/#connect",
+      type: "link",
     },
   ];
 
@@ -44,19 +46,40 @@ function Navbar() {
     closed: {
       height: 56,
       borderRadius: "9999px",
-      transition: { 
+      transition: {
         height: { type: "spring", stiffness: 300, damping: 30 },
-        borderRadius: { duration: 0.3, ease: "easeInOut", delay: 0.2 }
+        borderRadius: { duration: 0.3, ease: "easeInOut", delay: 0.2 },
       },
     },
     open: {
       height: "auto",
       borderRadius: "24px",
-      transition: { 
+      transition: {
         borderRadius: { duration: 0.3, ease: "easeInOut" },
-        height: { type: "spring", stiffness: 150, damping: 20, delay: 0.3 }
+        height: { type: "spring", stiffness: 150, damping: 20, delay: 0.3 },
       },
     },
+  };
+
+  const handleHashLinkClick = (to) => (event) => {
+    if (!to.includes("#")) return; // normal routing
+    event.preventDefault();
+    const [targetPath, hash] = to.split("#");
+    const path = targetPath || "/";
+
+    // If on a different path, navigate; ScrollToTop will handle smooth scroll
+    if (pathname !== path) {
+      navigate(to);
+      setMenuOpen(false);
+      return;
+    }
+
+    // Same path: manually scroll so repeated clicks work
+    const el = document.getElementById(hash);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -142,7 +165,11 @@ function Navbar() {
                     {item.type === "link" ? (
                       <Link
                         to={item.to}
-                        onClick={() => setMenuOpen(false)}
+                        onClick={
+                          item.to.includes("#")
+                            ? handleHashLinkClick(item.to)
+                            : () => setMenuOpen(false)
+                        }
                         className="flex items-center justify-center w-full my-1 py-2 font-extrabold text-white text-base rounded-full border-2 border-pink-400/40 bg-gradient-to-r from-purple-700/80 to-pink-600/80 shadow-md hover:scale-105 hover:from-purple-600 hover:to-pink-500 transition-all duration-300"
                       >
                         {item.icon}
@@ -170,9 +197,7 @@ function Navbar() {
 
       {/* Desktop nav */}
       <div className="w-full flex justify-center items-center px-2 py-4 hidden sm:flex overflow-hidden absolute top-1 left-0 z-40">
-        <div
-          className="flex flex-wrap justify-center items-center space-x-2 md:space-x-4 rounded-full px-4 md:px-6 py-2 shadow-2xl border border-white/30 bg-gradient-to-r from-purple-700/60 via-pink-500/40 to-blue-500/40 backdrop-blur-md w-full max-w-xl mx-auto overflow-x-auto overflow-y-hidden"
-        >
+        <div className="flex flex-wrap justify-center items-center space-x-2 md:space-x-4 rounded-full px-4 md:px-6 py-2 shadow-2xl border border-white/30 bg-gradient-to-r from-purple-700/60 via-pink-500/40 to-blue-500/40 backdrop-blur-md w-full max-w-xl mx-auto overflow-x-auto overflow-y-hidden">
           {navLinks.map((item, i) => (
             <motion.div
               key={item.label}
@@ -189,6 +214,11 @@ function Navbar() {
               {item.type === "link" ? (
                 <Link
                   to={item.to}
+                  onClick={
+                    item.to.includes("#")
+                      ? handleHashLinkClick(item.to)
+                      : undefined
+                  }
                   className="flex items-center px-4 py-2 font-extrabold text-white text-base sm:text-lg md:text-xl rounded-full border-2 border-pink-400/40 bg-gradient-to-r from-purple-700/70 to-pink-600/70 shadow-lg hover:scale-105 hover:from-purple-600 hover:to-pink-500 transition-all duration-300"
                 >
                   {item.icon}

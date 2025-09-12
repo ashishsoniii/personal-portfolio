@@ -162,11 +162,11 @@ const ExperienceCard = ({ experience }) => {
                   </motion.span>
                 ))}
                 {hiddenTech.length > 0 && (
-                  <div className="relative flex items-center justify-center z-[999] group">
+                  <div className="relative flex items-center justify-center z-[999] group/overflow">
                     <div className="px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r from-purple-600/30 to-pink-600/30 border border-purple-500/40 text-purple-200 cursor-default">
                       +{hiddenTech.length} more
                     </div>
-                    <div className="pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 absolute left-1/2 -translate-x-1/2 top-full mt-2 z-[999]">
+                    <div className="pointer-events-none opacity-0 group-hover/overflow:opacity-100 group-hover/overflow:pointer-events-auto transition-opacity duration-200 absolute left-1/2 -translate-x-1/2 top-full mt-2 z-[999]">
                       <div className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-xl border border-gray-700/60 rounded-2xl shadow-2xl p-3 sm:p-4 min-w-[220px]">
                         <div className="grid grid-cols-2 gap-2">
                           {hiddenTech.map((tech) => (

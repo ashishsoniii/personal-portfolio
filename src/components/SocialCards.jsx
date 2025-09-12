@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter, FaExternalLinkAlt } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 const SocialCards = () => {
@@ -12,7 +17,7 @@ const SocialCards = () => {
       icon: <FaGithub className="text-3xl" />,
       color: "from-gray-600 to-gray-800",
       hoverColor: "from-gray-700 to-gray-900",
-      description: "Open Source Contributions"
+      description: "Open Source Contributions",
     },
     {
       name: "LinkedIn",
@@ -20,7 +25,7 @@ const SocialCards = () => {
       icon: <FaLinkedin className="text-3xl" />,
       color: "from-blue-600 to-blue-800",
       hoverColor: "from-blue-700 to-blue-900",
-      description: "Professional Network"
+      description: "Professional Network",
     },
     {
       name: "Twitter",
@@ -28,7 +33,7 @@ const SocialCards = () => {
       icon: <FaTwitter className="text-3xl" />,
       color: "from-sky-500 to-blue-600",
       hoverColor: "from-sky-600 to-blue-700",
-      description: "Tech Updates & Thoughts"
+      description: "Tech Updates & Thoughts",
     },
     {
       name: "Email",
@@ -36,14 +41,15 @@ const SocialCards = () => {
       icon: <BsFillTelephoneFill className="text-3xl" />,
       color: "from-purple-600 to-pink-600",
       hoverColor: "from-purple-700 to-pink-700",
-      description: "Let's Connect!"
-    }
+      description: "Let's Connect!",
+    },
   ];
 
-
-
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+    <section
+      id="connect"
+      className="py-20 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900 scroll-mt-24 sm:scroll-mt-28"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -56,7 +62,8 @@ const SocialCards = () => {
             Connect & Collaborate
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                         Let&apos;s build something amazing together! Explore my work and reach out.
+            Let&apos;s build something amazing together! Explore my work and
+            reach out.
           </p>
         </motion.div>
 
@@ -72,8 +79,10 @@ const SocialCards = () => {
               className="group relative"
             >
               {/* Background Glow */}
-              <div className={`absolute inset-0 bg-gradient-to-r ${link.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-3xl`}></div>
-              
+              <div
+                className={`absolute inset-0 bg-gradient-to-r ${link.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-3xl`}
+              ></div>
+
               {/* Card */}
               <motion.a
                 href={link.url}
@@ -83,13 +92,17 @@ const SocialCards = () => {
                 whileHover={{ y: -10 }}
               >
                 <div className="text-center">
-                  <div className={`inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${link.color} rounded-2xl mb-4 sm:mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-300`}>
+                  <div
+                    className={`inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r ${link.color} rounded-2xl mb-4 sm:mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-300`}
+                  >
                     {link.icon}
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                     {link.name}
                   </h3>
-                  <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">{link.description}</p>
+                  <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">
+                    {link.description}
+                  </p>
                   <div className="flex items-center justify-center gap-2 text-purple-400 group-hover:text-purple-300 transition-colors">
                     <span className="text-sm font-semibold">Visit Profile</span>
                     <FaExternalLinkAlt className="text-sm group-hover:translate-x-1 transition-transform duration-300" />
@@ -100,10 +113,9 @@ const SocialCards = () => {
           ))}
         </div>
 
-
-
         {/* CTA Section */}
         <motion.div
+          id="contact"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -115,22 +127,23 @@ const SocialCards = () => {
               Ready to Build Something Amazing?
             </h3>
             <p className="text-gray-300 text-base sm:text-lg mb-4 sm:mb-6">
-              Let&apos;s create the next generation of digital experiences together.
+              Let&apos;s create the next generation of digital experiences
+              together.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
               <a
-                href="mailto:ashish.soni@example.com"
+                href="tel:+919660688940"
                 className="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-sm sm:text-base"
               >
                 <BsFillTelephoneFill />
-                Get in Touch
+                +91 - 9660688940
               </a>
               <a
-                href="/social"
+                href="https://www.linkedin.com/in/ashishsoniii/"
                 className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-sm sm:text-base"
               >
-                <FaGithub />
-                View Full Profile
+                <FaLinkedin />
+                LinkedIn Profile
               </a>
             </div>
           </div>
@@ -140,4 +153,4 @@ const SocialCards = () => {
   );
 };
 
-export default SocialCards; 
+export default SocialCards;

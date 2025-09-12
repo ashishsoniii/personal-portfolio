@@ -25,16 +25,16 @@ const AboutMe = () => {
           </div>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/90 leading-relaxed font-medium">
             I&apos;m a{" "}
-            <span className="font-bold text-pink-400">frontend engineer</span>{" "}
-            who ships fast with craft.
+            <span className="font-bold text-pink-400">Full Stack Engineer</span>{" "}
+            who builds fast with craft.
             <br className="hidden md:block" />
             Recently at{" "}
             <span className="font-bold text-purple-400">ClearFeed</span>, I
             worked across the core webapp, customer portal, and a new
             webchat—shipping{" "}
-            <span className="font-bold">100+ improvements</span> in weeks, from
-            dark mode and passwordless login to performance tuning (
-            <span className="font-bold">-40% load time</span>).
+            <span className="font-bold">200+ improvements</span> in 5 months,
+            from dark mode, security, and passwordless login to performance
+            tuning.
             <br className="hidden md:block" />I use an{" "}
             <span className="font-bold text-pink-400">AI-first workflow</span>{" "}
             (Cursor, MCP agents, Cubic) to move quickly without sacrificing

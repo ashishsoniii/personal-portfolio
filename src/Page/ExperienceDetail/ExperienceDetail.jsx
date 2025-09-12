@@ -12,8 +12,13 @@ const ExperienceDetail = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Experience Not Found</h1>
-          <Link to="/experience" className="text-purple-400 hover:text-purple-300">
+          <h1 className="text-4xl font-bold text-white mb-4">
+            Experience Not Found
+          </h1>
+          <Link
+            to="/experience"
+            className="text-purple-400 hover:text-purple-300"
+          >
             ← Back to Experience
           </Link>
         </div>
@@ -26,14 +31,14 @@ const ExperienceDetail = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -45,8 +50,10 @@ const ExperienceDetail = () => {
         className="relative overflow-hidden"
       >
         {/* Background Gradient */}
-        <div className={`absolute inset-0 bg-gradient-to-br ${experience.gradient} opacity-20`} />
-        
+        <div
+          className={`absolute inset-0 bg-gradient-to-br ${experience.gradient} opacity-20`}
+        />
+
         {/* Content */}
         <div className="relative z-10 pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-16 px-4">
           <div className="max-w-7xl mx-auto">
@@ -57,11 +64,11 @@ const ExperienceDetail = () => {
               className="mb-6 sm:mb-8"
             >
               <Link
-                to="/experience"
+                to="/"
                 className="inline-flex items-center text-white/80 hover:text-white transition-colors duration-300 text-sm sm:text-base"
               >
                 <FaArrowLeft className="mr-2" />
-                Back to Experience
+                Back to Home
               </Link>
             </motion.div>
 
@@ -71,7 +78,9 @@ const ExperienceDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-center mb-8 sm:mb-12"
             >
-              <div className="text-4xl sm:text-6xl md:text-8xl mb-4 sm:mb-6">{experience.logo}</div>
+              <div className="text-4xl sm:text-6xl md:text-8xl mb-4 sm:mb-6">
+                {experience.logo}
+              </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 sm:mb-4">
                 {experience.company}
               </h1>
@@ -96,7 +105,10 @@ const ExperienceDetail = () => {
         className="max-w-7xl mx-auto px-4 pb-20"
       >
         {/* Metrics Grid */}
-        <motion.div variants={itemVariants} className="mb-12 sm:mb-16 mt-6 sm:mt-8">
+        <motion.div
+          variants={itemVariants}
+          className="mb-12 sm:mb-16 mt-6 sm:mt-8"
+        >
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">
             Key Metrics & Impact
           </h3>
@@ -109,9 +121,15 @@ const ExperienceDetail = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-3 sm:p-6 border border-gray-700/50 text-center hover:scale-105 transition-transform duration-300"
               >
-                <div className="text-2xl sm:text-4xl mb-1 sm:mb-2">{metric.icon}</div>
-                <div className="text-lg sm:text-2xl font-bold text-white mb-1">{metric.value}</div>
-                <div className="text-gray-400 text-xs sm:text-sm">{metric.label}</div>
+                <div className="text-2xl sm:text-4xl mb-1 sm:mb-2">
+                  {metric.icon}
+                </div>
+                <div className="text-lg sm:text-2xl font-bold text-white mb-1">
+                  {metric.value}
+                </div>
+                <div className="text-gray-400 text-xs sm:text-sm">
+                  {metric.label}
+                </div>
               </motion.div>
             ))}
           </div>
@@ -133,15 +151,25 @@ const ExperienceDetail = () => {
               >
                 <div className="flex flex-col lg:flex-row lg:items-start gap-4 sm:gap-6">
                   <div className="flex-1">
-                    <h4 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">{project.name}</h4>
-                    <p className="text-gray-300 mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base">{project.description}</p>
+                    <h4 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">
+                      {project.name}
+                    </h4>
+                    <p className="text-gray-300 mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base">
+                      {project.description}
+                    </p>
                     <div className="bg-green-500/20 border border-green-500/30 rounded-xl p-3 sm:p-4 mb-3 sm:mb-4">
-                      <h5 className="text-green-400 font-semibold mb-1 text-sm sm:text-base">Impact</h5>
-                      <p className="text-green-300 text-sm sm:text-base">{project.impact}</p>
+                      <h5 className="text-green-400 font-semibold mb-1 text-sm sm:text-base">
+                        Impact
+                      </h5>
+                      <p className="text-green-300 text-sm sm:text-base">
+                        {project.impact}
+                      </p>
                     </div>
                   </div>
                   <div className="lg:w-48">
-                    <h5 className="text-gray-400 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Technologies Used</h5>
+                    <h5 className="text-gray-400 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">
+                      Technologies Used
+                    </h5>
                     <div className="flex flex-wrap gap-1 sm:gap-2">
                       {project.tech.map((tech) => (
                         <span
@@ -163,7 +191,9 @@ const ExperienceDetail = () => {
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {/* Achievements */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Major Achievements</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
+              Major Achievements
+            </h3>
             <div className="space-y-3 sm:space-y-4">
               {experience.achievements.map((achievement, index) => (
                 <motion.div
@@ -175,7 +205,9 @@ const ExperienceDetail = () => {
                   className="flex items-start gap-2 sm:gap-3"
                 >
                   <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">{achievement}</p>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
+                    {achievement}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -183,7 +215,9 @@ const ExperienceDetail = () => {
 
           {/* Technologies */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Technologies & Tools</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
+              Technologies & Tools
+            </h3>
             <div className="grid grid-cols-2 gap-2 sm:gap-3">
               {experience.tech.map((tech, index) => (
                 <motion.div
@@ -194,7 +228,9 @@ const ExperienceDetail = () => {
                   transition={{ delay: index * 0.05 }}
                   className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 border border-gray-700/50 rounded-xl p-3 sm:p-4 text-center hover:scale-105 transition-transform duration-300"
                 >
-                  <div className="text-white font-semibold text-sm sm:text-base">{tech}</div>
+                  <div className="text-white font-semibold text-sm sm:text-base">
+                    {tech}
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -205,7 +241,9 @@ const ExperienceDetail = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Challenges */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-3xl font-bold text-white mb-6">Challenges Overcome</h3>
+            <h3 className="text-3xl font-bold text-white mb-6">
+              Challenges Overcome
+            </h3>
             <div className="space-y-4">
               {experience.challenges.map((challenge, index) => (
                 <motion.div
@@ -224,7 +262,9 @@ const ExperienceDetail = () => {
 
           {/* Learnings */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-3xl font-bold text-white mb-6">Key Learnings</h3>
+            <h3 className="text-3xl font-bold text-white mb-6">
+              Key Learnings
+            </h3>
             <div className="space-y-4">
               {experience.learnings.map((learning, index) => (
                 <motion.div
@@ -244,7 +284,9 @@ const ExperienceDetail = () => {
 
         {/* Company Information */}
         <motion.div variants={itemVariants} className="mb-16">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">About {experience.company}</h3>
+          <h3 className="text-3xl font-bold text-white mb-8 text-center">
+            About {experience.company}
+          </h3>
           <div className="bg-gradient-to-r from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/30">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -253,17 +295,26 @@ const ExperienceDetail = () => {
                 </p>
                 {experience.companyInfo.mission && (
                   <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-4">
-                    <h4 className="text-blue-400 font-semibold mb-2">Mission</h4>
-                    <p className="text-blue-300">{experience.companyInfo.mission}</p>
+                    <h4 className="text-blue-400 font-semibold mb-2">
+                      Mission
+                    </h4>
+                    <p className="text-blue-300">
+                      {experience.companyInfo.mission}
+                    </p>
                   </div>
                 )}
               </div>
               <div className="space-y-4">
                 {Object.entries(experience.companyInfo).map(([key, value]) => {
-                  if (key === 'description' || key === 'mission') return null;
+                  if (key === "description" || key === "mission") return null;
                   return (
-                    <div key={key} className="flex justify-between items-center py-2 border-b border-gray-700/30">
-                      <span className="text-gray-400 capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</span>
+                    <div
+                      key={key}
+                      className="flex justify-between items-center py-2 border-b border-gray-700/30"
+                    >
+                      <span className="text-gray-400 capitalize">
+                        {key.replace(/([A-Z])/g, " $1").trim()}
+                      </span>
                       <span className="text-white font-semibold">{value}</span>
                     </div>
                   );
@@ -282,24 +333,25 @@ const ExperienceDetail = () => {
             Interested in Working Together?
           </h3>
           <p className="text-gray-300 text-lg mb-6">
-                         Let&apos;s discuss how I can bring similar value to your next project.
+            Let&apos;s discuss how I can bring similar value to your next
+            project.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:ashish.soni@example.com"
+              href="tel:+919660688940"
               className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               <BsFillTelephoneFill />
-              Get in Touch
+              +91 - 9660688940
             </a>
             <a
-              href="https://linkedin.com/in/ashish-soni"
+              href="https://www.linkedin.com/in/ashishsoniii/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               <FaLinkedin />
-              LinkedIn
+              LinkedIn Profile
             </a>
             <a
               href="https://github.com/ashish-soni"
@@ -317,4 +369,4 @@ const ExperienceDetail = () => {
   );
 };
 
-export default ExperienceDetail; 
+export default ExperienceDetail;
