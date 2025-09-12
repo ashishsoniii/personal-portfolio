@@ -279,6 +279,19 @@ const ProjectsSection = () => {
           </div>
         </motion.div>
 
+        {/* Subtle brag line */}
+        <div className="text-center mt-8 sm:mt-10">
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-300 to-red-300 text-lg sm:text-xl font-semibold">
+            There’s more where this came from — I build fast, delightful, and
+            scalable products.
+          </p>
+          <div className="mt-3">
+            <p className="text-gray-300 text-sm sm:text-base mb-3">
+              Let’s work together and make something great.
+            </p>
+          </div>
+        </div>
+
         {/* CTA Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
