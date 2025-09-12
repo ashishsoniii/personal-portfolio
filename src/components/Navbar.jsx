@@ -19,7 +19,7 @@ function Navbar() {
       type: "link",
     },
     {
-      label: "Portfolio",
+      label: "Resume",
       icon: <HiOutlineNewspaper className="mr-2 text-2xl" />,
       to: "https://docs.google.com/document/d/1MpkPFbi64Yp67YmC1R3TC-3MGwgBOMR5IUubvCZ32Es/edit?usp=sharing",
       type: "a",
