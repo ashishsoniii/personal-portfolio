@@ -21,7 +21,7 @@ function Navbar() {
     {
       label: "Portfolio",
       icon: <HiOutlineNewspaper className="mr-2 text-2xl" />,
-      to: "https://drive.google.com/file/d/1Jx-An1OjOXvJWS6vQjvCO40sJ_Q54Sfb/view?usp=drive_link",
+      to: "https://docs.google.com/document/d/1MpkPFbi64Yp67YmC1R3TC-3MGwgBOMR5IUubvCZ32Es/edit?usp=sharing",
       type: "a",
       target: "__blank",
     },
