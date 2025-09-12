@@ -135,6 +135,28 @@ const ExperienceDetail = () => {
           </div>
         </motion.div>
 
+        {/* Top Committer Badge (ClearFeed only) */}
+        {experience.id === "clearfeed" && (
+          <motion.div
+            variants={itemVariants}
+            className="max-w-4xl mx-auto mb-12 sm:mb-16"
+          >
+            <div className="relative overflow-hidden rounded-3xl border border-gray-700/60 bg-gradient-to-br from-gray-800/40 to-gray-900/40 shadow-xl">
+              <img
+                src="/project-imgs/cf-github.png"
+                alt="Top GitHub Committer at ClearFeed"
+                className="w-full h-auto object-contain"
+                loading="lazy"
+              />
+              <div className="absolute top-3 left-3">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-purple-600 to-pink-600 border border-white/10 shadow">
+                  🌟 Top Committer
+                </span>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
         {/* Key Projects */}
         <motion.div variants={itemVariants} className="mb-12 sm:mb-16">
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">
