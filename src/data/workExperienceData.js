@@ -99,42 +99,52 @@ export const workExperienceData = [
   {
     id: "gap-inc",
     company: "GAP INC.",
-    position: "iOS Developer Intern",
+    position: "React Developer Intern",
     location: "Hyderabad, India",
-    duration: "July 2024 - Aug 2024",
-    logo: "🍎",
+    duration: "Jul 2024 - Aug 2024",
+    logo: "⚛️",
     color: "from-blue-600 to-cyan-600",
     gradient: "from-blue-600 via-cyan-500 to-teal-500",
     shortDescription:
-      "Developed 10+ reusable SwiftUI components for Gap's Old Navy app",
+      "Migrated a Revenue Dashboard from Oracle ADF to React, cutting licensing costs and improving dashboard responsiveness",
     achievements: [
-      "Developed 10+ reusable SwiftUI components for Gap's Old Navy app, significantly improving user experience, interface consistency, and code maintainability",
+      "Migrated Revenue Dashboard from Oracle ADF to React, eliminating ~30% in Oracle licensing costs.",
+      "Implemented responsive data table with real-time filtering and export functionality using React Query and Ant Design, reducing dashboard interaction latency from ~3s to under 800ms.",
     ],
-    tech: ["SwiftUI", "iOS", "Xcode", "Git"],
+    tech: ["React", "React Query", "Ant Design", "JavaScript", "Oracle ADF", "Git"],
     metrics: [
-      { label: "Components Built", value: "10+", icon: "🧩" },
-      { label: "Code Reusability", value: "85%", icon: "♻️" },
-      { label: "Performance Gain", value: "30%", icon: "⚡" },
-      { label: "User Experience", value: "Enhanced", icon: "✨" },
+      { label: "Licensing Cost Reduction", value: "~30%", icon: "💰" },
+      { label: "Latency Reduced", value: "<800ms", icon: "⚡" },
+      { label: "Previous Latency", value: "~3s", icon: "⏱️" },
+      { label: "Dashboard Migration", value: "ADF → React", icon: "📊" },
     ],
     keyProjects: [
       {
-        name: "Reusable UI Component Library",
+        name: "Revenue Dashboard Migration",
         description:
-          "Created a comprehensive library of SwiftUI components for the Old Navy app",
-        impact: "Improved development speed and UI consistency across the app",
-        tech: ["SwiftUI", "Combine", "Core Data"],
+          "Migrated the Revenue Dashboard from Oracle ADF to a modern React interface.",
+        impact:
+          "Eliminated ~30% in Oracle licensing costs while improving maintainability.",
+        tech: ["React", "Oracle ADF", "JavaScript"],
+      },
+      {
+        name: "Responsive Data Table",
+        description:
+          "Built a responsive data table with real-time filtering and export functionality.",
+        impact:
+          "Reduced dashboard interaction latency from ~3s to under 800ms.",
+        tech: ["React Query", "Ant Design", "React"],
       },
     ],
     challenges: [
-      "Learning SwiftUI framework from scratch",
-      "Ensuring components work across different iOS versions",
-      "Maintaining design consistency with brand guidelines",
+      "Migrating legacy Oracle ADF dashboard flows into a modern React experience",
+      "Optimizing table interactions for real-time filtering and exports",
+      "Maintaining enterprise dashboard usability across responsive layouts",
     ],
     learnings: [
-      "Modern iOS development with SwiftUI",
-      "Component-driven development approach",
-      "Enterprise app development practices",
+      "Modernizing enterprise dashboards from legacy frameworks to React",
+      "Server-state and data-fetching patterns with React Query",
+      "Building performant, responsive data-heavy interfaces with Ant Design",
     ],
     companyInfo: {
       industry: "Retail & Fashion",

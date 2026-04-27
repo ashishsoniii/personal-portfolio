@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 const SEOHead = ({ 
   title = "Ashish Soni - Full Stack Developer | GSoC 2023 | ClearFeed | Portfolio",
-  description = "Ashish Soni is a Full Stack Developer with experience at ClearFeed, GSoC 2023 participant at The Tor Project, and iOS Developer at GAP INC. Expert in React, Node.js, TypeScript, and building scalable web applications.",
-  keywords = "Ashish Soni, Full Stack Developer, React Developer, Node.js Developer, GSoC 2023, ClearFeed, The Tor Project, iOS Developer, GAP INC, TypeScript, MongoDB, Portfolio, Web Developer, Software Engineer",
+  description = "Ashish Soni is a Full Stack Developer with experience at ClearFeed, GSoC 2023 participant at The Tor Project, and React Developer Intern at GAP INC. Expert in React, Node.js, TypeScript, and building scalable web applications.",
+  keywords = "Ashish Soni, Full Stack Developer, React Developer, Node.js Developer, GSoC 2023, ClearFeed, The Tor Project, GAP INC, React Query, Ant Design, TypeScript, MongoDB, Portfolio, Web Developer, Software Engineer",
   image = "https://ashishsoni.dev/og-image.jpg",
   url = "https://ashishsoni.dev",
   type = "website",

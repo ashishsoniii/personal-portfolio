@@ -3,8 +3,8 @@ export const seoConfig = {
   // Default SEO settings
   default: {
     title: "Ashish Soni - Full Stack Developer | GSoC 2023 | ClearFeed | Portfolio",
-    description: "Ashish Soni is a Full Stack Developer with experience at ClearFeed, GSoC 2023 participant at The Tor Project, and iOS Developer at GAP INC. Expert in React, Node.js, TypeScript, and building scalable web applications.",
-    keywords: "Ashish Soni, Full Stack Developer, React Developer, Node.js Developer, GSoC 2023, ClearFeed, The Tor Project, iOS Developer, GAP INC, TypeScript, MongoDB, Portfolio, Web Developer, Software Engineer, Frontend Developer, Backend Developer, JavaScript, Python, SwiftUI",
+    description: "Ashish Soni is a Full Stack Developer with experience at ClearFeed, GSoC 2023 participant at The Tor Project, and React Developer Intern at GAP INC. Expert in React, Node.js, TypeScript, and building scalable web applications.",
+    keywords: "Ashish Soni, Full Stack Developer, React Developer, Node.js Developer, GSoC 2023, ClearFeed, The Tor Project, GAP INC, React Query, Ant Design, TypeScript, MongoDB, Portfolio, Web Developer, Software Engineer, Frontend Developer, Backend Developer, JavaScript, Python",
     image: "https://ashishsoni.dev/og-image.jpg",
     url: "https://ashishsoni.dev",
     type: "website",
@@ -14,8 +14,8 @@ export const seoConfig = {
   // Homepage SEO
   home: {
     title: "Ashish Soni - Full Stack Developer | GSoC 2023 | ClearFeed | Portfolio",
-    description: "Ashish Soni is a Full Stack Developer with experience at ClearFeed, GSoC 2023 participant at The Tor Project, and iOS Developer at GAP INC. Expert in React, Node.js, TypeScript, and building scalable web applications.",
-    keywords: "Ashish Soni, Full Stack Developer, React Developer, Node.js Developer, GSoC 2023, ClearFeed, The Tor Project, iOS Developer, GAP INC, TypeScript, MongoDB, Portfolio, Web Developer, Software Engineer",
+    description: "Ashish Soni is a Full Stack Developer with experience at ClearFeed, GSoC 2023 participant at The Tor Project, and React Developer Intern at GAP INC. Expert in React, Node.js, TypeScript, and building scalable web applications.",
+    keywords: "Ashish Soni, Full Stack Developer, React Developer, Node.js Developer, GSoC 2023, ClearFeed, The Tor Project, GAP INC, React Query, Ant Design, TypeScript, MongoDB, Portfolio, Web Developer, Software Engineer",
     url: "https://ashishsoni.dev"
   },
 
@@ -23,15 +23,15 @@ export const seoConfig = {
   about: {
     title: "About Ashish Soni - Full Stack Developer | GSoC 2023 | ClearFeed",
     description: "Learn about Ashish Soni, a passionate Full Stack Developer with expertise in React, Node.js, TypeScript, and modern web technologies. GSoC 2023 participant and ClearFeed engineer.",
-    keywords: "About Ashish Soni, Full Stack Developer, React Developer, Node.js Developer, GSoC 2023, ClearFeed, The Tor Project, iOS Developer, GAP INC, TypeScript, MongoDB, Web Developer, Software Engineer",
+    keywords: "About Ashish Soni, Full Stack Developer, React Developer, Node.js Developer, GSoC 2023, ClearFeed, The Tor Project, GAP INC, React Query, Ant Design, TypeScript, MongoDB, Web Developer, Software Engineer",
     url: "https://ashishsoni.dev/#about"
   },
 
   // Experience section SEO
   experience: {
     title: "Work Experience - Ashish Soni | ClearFeed, GSoC 2023, GAP INC",
-    description: "Explore Ashish Soni's professional experience including his role at ClearFeed, GSoC 2023 participation at The Tor Project, iOS development at GAP INC, and government tech work at C4GT.",
-    keywords: "Work Experience, Ashish Soni, ClearFeed, GSoC 2023, The Tor Project, GAP INC, iOS Developer, C4GT, Government Tech, Full Stack Developer, React Developer, Node.js Developer",
+    description: "Explore Ashish Soni's professional experience including his role at ClearFeed, GSoC 2023 participation at The Tor Project, React dashboard development at GAP INC, and government tech work at C4GT.",
+    keywords: "Work Experience, Ashish Soni, ClearFeed, GSoC 2023, The Tor Project, GAP INC, React Developer Intern, Revenue Dashboard, React Query, Ant Design, C4GT, Government Tech, Full Stack Developer, Node.js Developer",
     url: "https://ashishsoni.dev/#experience"
   },
 
@@ -92,9 +92,9 @@ export const seoConfig = {
       url: "https://ashishsoni.dev/experience/gsoc-2023"
     },
     "gap-inc": {
-      title: "GAP INC Experience - Ashish Soni | iOS Developer Intern",
-      description: "Ashish Soni's iOS development internship at GAP INC. Developed 10+ reusable SwiftUI components for Old Navy app, improving user experience and code maintainability.",
-      keywords: "GAP INC, iOS Developer Intern, SwiftUI, Old Navy App, iOS Development, Xcode, Ashish Soni, Mobile Development, Fashion Retail",
+      title: "GAP INC Experience - Ashish Soni | React Developer Intern",
+      description: "Ashish Soni's React Developer internship at GAP INC. Migrated a Revenue Dashboard from Oracle ADF to React and improved dashboard latency with React Query and Ant Design.",
+      keywords: "GAP INC, React Developer Intern, Revenue Dashboard, Oracle ADF, React Query, Ant Design, React, Ashish Soni, Frontend Development, Fashion Retail",
       url: "https://ashishsoni.dev/experience/gap-inc"
     },
     "c4gt": {
@@ -214,7 +214,7 @@ export const getStructuredData = (page, subPage = null) => {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "GAP INC - iOS Developer Intern",
+            "name": "GAP INC - React Developer Intern",
             "url": "https://ashishsoni.dev/experience/gap-inc"
           },
           {

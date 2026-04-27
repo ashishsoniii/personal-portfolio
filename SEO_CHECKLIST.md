@@ -146,7 +146,7 @@
 ### ✅ Experience Descriptions
 - [x] ClearFeed - Member of Technical Staff
 - [x] GSoC 2023 - The Tor Project
-- [x] GAP INC - iOS Developer Intern
+- [x] GAP INC - React Developer Intern
 - [x] C4GT - Full Stack Intern @ MeitY
 
 ## 🚀 Next Steps for Maximum SEO Impact
