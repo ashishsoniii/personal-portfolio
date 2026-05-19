@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!--
+    Pixel AS — 5×7 bitmap monogram for Ashish Soni
+    C=4 (cell), G=1 (gap), step=5
+    Mark: 54×39px, centered in 64×64
+    x_offset=5, y_offset=12.5
+    A in fg, S in fg, accent underbar under S only
+  -->
+  <style>
+    @media (prefers-color-scheme: dark) { .bg{fill:#0a0908} .fg{fill:#eae6dd} }
+    @media (prefers-color-scheme: light) { .bg{fill:#f4f1ea} .fg{fill:#15110d} }
+    .ac{fill:#ff5e3a}
+  </style>
+
+  <!-- Background -->
+  <rect width="64" height="64" rx="10" class="bg"/>
+
+  <!-- A — 5×7 letterform, x offset=5, y offset=12.5, step=5 -->
+  <!-- Row 0: cols 1,2,3 -->
+  <rect x="10" y="12.5" width="4" height="4" class="fg"/>
+  <rect x="15" y="12.5" width="4" height="4" class="fg"/>
+  <rect x="20" y="12.5" width="4" height="4" class="fg"/>
+  <!-- Row 1: cols 0,4 -->
+  <rect x="5"  y="17.5" width="4" height="4" class="fg"/>
+  <rect x="25" y="17.5" width="4" height="4" class="fg"/>
+  <!-- Row 2: cols 0,4 -->
+  <rect x="5"  y="22.5" width="4" height="4" class="fg"/>
+  <rect x="25" y="22.5" width="4" height="4" class="fg"/>
+  <!-- Row 3: cols 0-4 (crossbar) -->
+  <rect x="5"  y="27.5" width="4" height="4" class="fg"/>
+  <rect x="10" y="27.5" width="4" height="4" class="fg"/>
+  <rect x="15" y="27.5" width="4" height="4" class="fg"/>
+  <rect x="20" y="27.5" width="4" height="4" class="fg"/>
+  <rect x="25" y="27.5" width="4" height="4" class="fg"/>
+  <!-- Row 4: cols 0,4 -->
+  <rect x="5"  y="32.5" width="4" height="4" class="fg"/>
+  <rect x="25" y="32.5" width="4" height="4" class="fg"/>
+  <!-- Row 5: cols 0,4 -->
+  <rect x="5"  y="37.5" width="4" height="4" class="fg"/>
+  <rect x="25" y="37.5" width="4" height="4" class="fg"/>
+  <!-- Row 6: cols 0,4 -->
+  <rect x="5"  y="42.5" width="4" height="4" class="fg"/>
+  <rect x="25" y="42.5" width="4" height="4" class="fg"/>
+
+  <!-- S — 5×7 letterform, S cols start at global col 6 = x 35 -->
+  <!-- Row 0: S cols 1,2,3,4 → global 7,8,9,10 → x=40,45,50,55 -->
+  <rect x="40" y="12.5" width="4" height="4" class="fg"/>
+  <rect x="45" y="12.5" width="4" height="4" class="fg"/>
+  <rect x="50" y="12.5" width="4" height="4" class="fg"/>
+  <rect x="55" y="12.5" width="4" height="4" class="fg"/>
+  <!-- Row 1: S col 0 → global 6 → x=35 -->
+  <rect x="35" y="17.5" width="4" height="4" class="fg"/>
+  <!-- Row 2: S col 0 → x=35 -->
+  <rect x="35" y="22.5" width="4" height="4" class="fg"/>
+  <!-- Row 3: S cols 1,2,3 → x=40,45,50 -->
+  <rect x="40" y="27.5" width="4" height="4" class="fg"/>
+  <rect x="45" y="27.5" width="4" height="4" class="fg"/>
+  <rect x="50" y="27.5" width="4" height="4" class="fg"/>
+  <!-- Row 4: S col 4 → global 10 → x=55 -->
+  <rect x="55" y="32.5" width="4" height="4" class="fg"/>
+  <!-- Row 5: S col 4 → x=55 -->
+  <rect x="55" y="37.5" width="4" height="4" class="fg"/>
+  <!-- Row 6: S cols 0,1,2,3 → x=35,40,45,50 -->
+  <rect x="35" y="42.5" width="4" height="4" class="fg"/>
+  <rect x="40" y="42.5" width="4" height="4" class="fg"/>
+  <rect x="45" y="42.5" width="4" height="4" class="fg"/>
+  <rect x="50" y="42.5" width="4" height="4" class="fg"/>
+
+  <!-- Underbar — accent, under S only, row 7 = y 47.5 -->
+  <rect x="35" y="47.5" width="4" height="4" class="ac"/>
+  <rect x="40" y="47.5" width="4" height="4" class="ac"/>
+  <rect x="45" y="47.5" width="4" height="4" class="ac"/>
+  <rect x="50" y="47.5" width="4" height="4" class="ac"/>
+  <rect x="55" y="47.5" width="4" height="4" class="ac"/>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <!--
+    Apple touch icon — Pixel AS monogram
+    C=10 (cell), G=2 (gap), step=12
+    Mark W=130 (11*10+10*2), H=94 (8*10+7*2)
+    x_offset=(180-130)/2=25, y_offset=(180-94)/2=43
+    col x = 25 + col*12
+    row y = 43 + row*12
+    col:  0=25  1=37  2=49  3=61  4=73  [5=85 gap]  6=97  7=109  8=121  9=133  10=145
+    row:  0=43  1=55  2=67  3=79  4=91  5=103  6=115  7=127(underbar)
+  -->
+  <rect width="180" height="180" rx="38" fill="#0a0908"/>
+
+  <!-- A letterform -->
+  <!-- row 0: cols 1,2,3 -->
+  <rect x="37"  y="43"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="49"  y="43"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="61"  y="43"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 1: cols 0,4 -->
+  <rect x="25"  y="55"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="73"  y="55"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 2: cols 0,4 -->
+  <rect x="25"  y="67"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="73"  y="67"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 3: cols 0–4 (crossbar) -->
+  <rect x="25"  y="79"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="37"  y="79"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="49"  y="79"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="61"  y="79"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="73"  y="79"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 4: cols 0,4 -->
+  <rect x="25"  y="91"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="73"  y="91"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 5: cols 0,4 -->
+  <rect x="25"  y="103" width="10" height="10" fill="#eae6dd"/>
+  <rect x="73"  y="103" width="10" height="10" fill="#eae6dd"/>
+  <!-- row 6: cols 0,4 -->
+  <rect x="25"  y="115" width="10" height="10" fill="#eae6dd"/>
+  <rect x="73"  y="115" width="10" height="10" fill="#eae6dd"/>
+
+  <!-- S letterform (S col 0=global 6, S col 1=global 7, …) -->
+  <!-- row 0: S cols 1,2,3,4 → global 7,8,9,10 → x=109,121,133,145 -->
+  <rect x="109" y="43"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="121" y="43"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="133" y="43"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="145" y="43"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 1: S col 0 → global 6 → x=97 -->
+  <rect x="97"  y="55"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 2: S col 0 → x=97 -->
+  <rect x="97"  y="67"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 3: S cols 1,2,3 → global 7,8,9 → x=109,121,133 -->
+  <rect x="109" y="79"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="121" y="79"  width="10" height="10" fill="#eae6dd"/>
+  <rect x="133" y="79"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 4: S col 4 → global 10 → x=145 -->
+  <rect x="145" y="91"  width="10" height="10" fill="#eae6dd"/>
+  <!-- row 5: S col 4 → x=145 -->
+  <rect x="145" y="103" width="10" height="10" fill="#eae6dd"/>
+  <!-- row 6: S cols 0,1,2,3 → global 6,7,8,9 → x=97,109,121,133 -->
+  <rect x="97"  y="115" width="10" height="10" fill="#eae6dd"/>
+  <rect x="109" y="115" width="10" height="10" fill="#eae6dd"/>
+  <rect x="121" y="115" width="10" height="10" fill="#eae6dd"/>
+  <rect x="133" y="115" width="10" height="10" fill="#eae6dd"/>
+
+  <!-- Underbar — accent orange, under S only (cols 6–10), row 7 → y=127 -->
+  <rect x="97"  y="127" width="10" height="10" fill="#ff5e3a"/>
+  <rect x="109" y="127" width="10" height="10" fill="#ff5e3a"/>
+  <rect x="121" y="127" width="10" height="10" fill="#ff5e3a"/>
+  <rect x="133" y="127" width="10" height="10" fill="#ff5e3a"/>
+  <rect x="145" y="127" width="10" height="10" fill="#ff5e3a"/>
+</svg>
