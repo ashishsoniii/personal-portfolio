@@ -18,26 +18,27 @@ export default function Experience() {
       <div style={{
         display: "flex", justifyContent: "space-between", alignItems: "baseline",
         marginBottom: 56, paddingBottom: 18, borderBottom: "1px solid var(--accent-line)",
+        flexWrap: "wrap", gap: 8,
       }}>
-        <h2 className="grotesk" style={{ fontSize: "clamp(56px, 8vw, 96px)", margin: 0, fontWeight: 600, letterSpacing: "-0.03em", color: "var(--fg)" }}>./career.log</h2>
-        <span className="mono" style={{ fontSize: 11, color: "var(--muted)", letterSpacing: "0.12em" }}>—— 5 COMMITS · LATEST FIRST</span>
+        <h2 className="grotesk exp-section-heading" style={{ fontSize: "clamp(36px, 8vw, 96px)", margin: 0, fontWeight: 600, letterSpacing: "-0.03em", color: "var(--fg)" }}>./career.log</h2>
+        <span className="mono exp-section-meta" style={{ fontSize: 11, color: "var(--muted)", letterSpacing: "0.12em" }}>—— 5 COMMITS · LATEST FIRST</span>
       </div>
 
       <div className="dev-card" style={{ padding: 0, borderRadius: 10, overflow: "hidden" }}>
         {D.experience.map((e, i) => (
-          <div key={i} style={{
+          <div key={i} className="exp-row" style={{
             padding: "30px 32px",
             borderTop: i > 0 ? "1px solid var(--accent-line)" : "none",
             display: "grid", gridTemplateColumns: "120px 1fr 200px",
             gap: 28, alignItems: "start",
           }}>
-            <div className="mono" style={{ fontSize: 11, color: "var(--accent)", letterSpacing: "0.05em", lineHeight: 1.7 }}>
+            <div className="mono exp-hash-col" style={{ fontSize: 11, color: "var(--accent)", letterSpacing: "0.05em", lineHeight: 1.7 }}>
               <div>commit</div>
               <div style={{ color: "var(--muted)" }}>{hashes[i]}</div>
               <div style={{ color: "var(--muted)", marginTop: 8 }}>{e.period.split(" — ")[0]}</div>
             </div>
             <div>
-              <div className="grotesk" style={{ fontSize: 24, fontWeight: 500, color: "var(--fg)", marginBottom: 4, letterSpacing: "-0.01em" }}>
+              <div className="grotesk exp-company" style={{ fontSize: 22, fontWeight: 500, color: "var(--fg)", marginBottom: 4, letterSpacing: "-0.01em", lineHeight: 1.2 }}>
                 {e.company}{" "}
                 <span className="mono" style={{ color: "var(--muted)", fontSize: 12, fontWeight: 400 }}>· {e.role}</span>
               </div>
@@ -52,7 +53,7 @@ export default function Experience() {
                 ))}
               </ul>
             </div>
-            <div className="mono" style={{ fontSize: 10, color: "var(--muted)", lineHeight: 1.85, textAlign: "right", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div className="mono exp-stack-col" style={{ fontSize: 10, color: "var(--muted)", lineHeight: 1.85, textAlign: "right", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
               <div>{e.stack.map(s => <div key={s}>· {s}</div>)}</div>
               <Link
                 to={`/career/${e.id}`}

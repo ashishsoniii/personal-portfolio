@@ -77,7 +77,7 @@ export default function About() {
       <WorkflowFlow />
 
       {/* AI-first manifesto */}
-      <div className="ai-strip" style={{ marginTop: 96 }}>
+      <div className="ai-strip" style={{ marginTop: 72 }}>
         <div className="ai-strip-inner">
           <h3 className="serif" style={{
             fontSize: "clamp(40px, 6vw, 80px)", lineHeight: 1.05, margin: 0,
@@ -92,14 +92,14 @@ export default function About() {
       </div>
 
       {/* Highlights */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(5,1fr)", gap: 0, marginTop: 96, borderTop: "1px solid var(--line)" }}>
+      <div className="about-highlights" style={{ display: "grid", gridTemplateColumns: "repeat(5,1fr)", gap: 0, marginTop: 96, borderTop: "1px solid var(--line)" }}>
         {D.highlights.map((h, i) => (
-          <div key={i} style={{
+          <div key={i} className="about-highlight-item" style={{
             padding: "32px 18px 0 0",
             borderRight: i < D.highlights.length - 1 ? "1px solid var(--line)" : "none",
             paddingLeft: i === 0 ? 0 : 22,
           }}>
-            <div className="serif" style={{ fontSize: 52, lineHeight: 1, color: "var(--accent)", marginBottom: 12, fontWeight: 400 }}>{h.v}</div>
+            <div className="serif about-highlight-num" style={{ fontSize: 52, lineHeight: 1, color: "var(--accent)", marginBottom: 12, fontWeight: 400 }}>{h.v}</div>
             <div className="mono" style={{ fontSize: 9.5, color: "var(--muted)", letterSpacing: "0.1em", textTransform: "uppercase", lineHeight: 1.5 }}>{h.k}</div>
           </div>
         ))}

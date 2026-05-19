@@ -115,6 +115,7 @@ function ResumeModal({ onClose }) {
 export default function Hero({ openPalette }) {
   const [typed, setTyped]           = useState("");
   const [resumeOpen, setResumeOpen] = useState(false);
+  const [menuOpen, setMenuOpen]     = useState(false);
 
   useEffect(() => {
     const phrases = [
@@ -154,12 +155,12 @@ export default function Hero({ openPalette }) {
       </div>
 
       {/* Nav */}
-      <div style={{
+      <div className="hero-nav" style={{
         position: "absolute", top: 28, left: 56, right: 56,
         display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 10,
       }}>
         <PixelMark cell={2.5} gap={0.5} />
-        <nav role="navigation" aria-label="Main navigation" style={{ display: "flex", gap: 24, alignItems: "center" }}>
+        <nav role="navigation" aria-label="Main navigation" className="hero-nav-links" style={{ display: "flex", gap: 24, alignItems: "center" }}>
           {[["work","#work"],["about","#about"],["résumé","#career"],["contact","#contact"]].map(([l,h]) => (
             <a key={l} href={h} className="hover-line mono" style={{
               fontSize: 11, color: "var(--muted-2)", textDecoration: "none",
@@ -168,7 +169,57 @@ export default function Hero({ openPalette }) {
           ))}
           <button onClick={openPalette} aria-label="Open command palette" className="mono kbd-btn">⌘ K</button>
         </nav>
+        {/* Mobile hamburger */}
+        <button
+          className="hero-nav-hamburger mono"
+          onClick={() => setMenuOpen(v => !v)}
+          aria-label="Open menu"
+          style={{ border: "none" }}
+        >
+          ☰
+        </button>
       </div>
+
+      {/* Mobile slide-down menu */}
+      {menuOpen && (
+        <div style={{
+          position: "fixed", inset: 0, zIndex: 200,
+          background: "rgba(10,9,8,0.97)", backdropFilter: "blur(20px)",
+          display: "flex", flexDirection: "column", alignItems: "flex-start",
+          justifyContent: "center", padding: "0 32px",
+        }}>
+          <button
+            onClick={() => setMenuOpen(false)}
+            aria-label="Close menu"
+            style={{
+              position: "absolute", top: 24, right: 24,
+              background: "none", border: "1px solid var(--line)", borderRadius: 8,
+              color: "var(--muted-2)", fontSize: 18, padding: "8px 12px", cursor: "pointer",
+            }}
+          >✕</button>
+          <nav role="navigation" aria-label="Mobile navigation" style={{ display: "flex", flexDirection: "column", gap: 0, width: "100%" }}>
+            {[["work","#work"],["about","#about"],["résumé","#career"],["contact","#contact"]].map(([l,h]) => (
+              <a key={l} href={h}
+                onClick={() => setMenuOpen(false)}
+                className="mono"
+                style={{
+                  fontSize: 40, color: "var(--fg)", textDecoration: "none",
+                  letterSpacing: "-0.02em", fontWeight: 500,
+                  padding: "16px 0", borderBottom: "1px solid var(--line)",
+                  display: "block", transition: "color .2s",
+                }}
+                onTouchStart={e => e.currentTarget.style.color = "var(--accent)"}
+                onTouchEnd={e => e.currentTarget.style.color = "var(--fg)"}
+              >{l}</a>
+            ))}
+          </nav>
+          <button
+            onClick={() => { openPalette(); setMenuOpen(false); }}
+            className="mono kbd-btn"
+            style={{ marginTop: 32, fontSize: 13, padding: "10px 18px" }}
+          >⌘ K — command palette</button>
+        </div>
+      )}
 
       {/* Content — left column */}
       <div className="hero-content">
@@ -218,7 +269,7 @@ export default function Hero({ openPalette }) {
       </div>
 
       {/* Scroll cue */}
-      <div style={{ position: "absolute", bottom: 36, left: 56, zIndex: 5 }}>
+      <div className="hero-scroll-cue" style={{ position: "absolute", bottom: 36, left: 56, zIndex: 5 }}>
         <div className="mono scroll-cue" style={{ fontSize: 10, color: "var(--muted)", letterSpacing: "0.2em" }}>
           SCROLL — ENTER DEV MODE ↓
         </div>

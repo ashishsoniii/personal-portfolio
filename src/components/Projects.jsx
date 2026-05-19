@@ -69,17 +69,18 @@ export default function Projects() {
         <div style={{
           display: "flex", justifyContent: "space-between", alignItems: "baseline",
           marginBottom: 56, paddingBottom: 18, borderBottom: "1px solid var(--accent-line)",
+          flexWrap: "wrap", gap: 8,
         }}>
-          <h2 className="grotesk" style={{ fontSize: "clamp(56px, 8vw, 96px)", margin: 0, fontWeight: 600, letterSpacing: "-0.03em", color: "var(--fg)" }}>./projects</h2>
-          <span className="mono" style={{ fontSize: 11, color: "var(--muted)", letterSpacing: "0.12em" }}>—— 5 ENTRIES · SORTED BY IMPACT</span>
+          <h2 className="grotesk projects-section-heading" style={{ fontSize: "clamp(36px, 8vw, 96px)", margin: 0, fontWeight: 600, letterSpacing: "-0.03em", color: "var(--fg)" }}>./projects</h2>
+          <span className="mono projects-section-meta" style={{ fontSize: 11, color: "var(--muted)", letterSpacing: "0.12em" }}>—— 5 ENTRIES · SORTED BY IMPACT</span>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 18 }}>
+        <div className="projects-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 18 }}>
           {D.projects.map((p, i) => (
             <div key={p.id}
               onMouseEnter={() => setHover(p.id)}
               onMouseLeave={() => setHover(null)}
-              className="dev-card"
+              className="dev-card project-card"
               style={{
                 gridColumn: i === 0 ? "span 2" : "span 1",
                 padding: i === 0 ? 36 : 26,
@@ -91,7 +92,7 @@ export default function Projects() {
                 <span className="mono" style={{ fontSize: 10, color: "var(--accent)", letterSpacing: "0.18em", textTransform: "uppercase" }}>0{i + 1} · {p.kind}</span>
                 <span className="mono" style={{ fontSize: 10, color: "var(--muted)", letterSpacing: "0.1em" }}>{p.year}</span>
               </div>
-              <h3 className="grotesk" style={{
+              <h3 className={`grotesk${i === 0 ? " project-title-featured" : ""}`} style={{
                 fontSize: i === 0 ? 52 : 28, margin: 0, marginBottom: 12,
                 fontWeight: 500, letterSpacing: "-0.02em", color: "var(--fg)", lineHeight: 1.05,
               }}>{p.title}</h3>
