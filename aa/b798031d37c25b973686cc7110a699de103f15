@@ -1,0 +1,22 @@
+src/components/Hero.jsx
+  s_8638066526025b::t_3069b093118411 4-26
+  s_8638066526025b::t_7fbf917edde1df 142-143
+  s_8638066526025b::t_4ec1f31abc2005 271
+  s_8638066526025b::t_8fc448c1e026bb 270
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "aab798031d37c25b973686cc7110a699de103f15",
+  "prompts": {},
+  "sessions": {
+    "s_8638066526025b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d6f9f3d8-54bf-4353-a3ec-2797d48c8dd4",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Ashish Soni <ashishsoni2002@gmail.com>"
+    }
+  }
+}
