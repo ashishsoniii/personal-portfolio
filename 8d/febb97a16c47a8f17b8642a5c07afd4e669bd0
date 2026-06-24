@@ -1,0 +1,24 @@
+src/components/Hero.jsx
+  s_8638066526025b::t_6285237f908210 245-246
+src/App.jsx
+  s_8638066526025b::t_5f02475b8e6f39 2-3
+  s_8638066526025b::t_fe4dce938e59ce 83-99,109
+src/components/LoadingScreen.jsx
+  s_8638066526025b::t_efe1d5522da728 1-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "8dfebb97a16c47a8f17b8642a5c07afd4e669bd0",
+  "prompts": {},
+  "sessions": {
+    "s_8638066526025b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d6f9f3d8-54bf-4353-a3ec-2797d48c8dd4",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Ashish Soni <ashishsoni2002@gmail.com>"
+    }
+  }
+}
