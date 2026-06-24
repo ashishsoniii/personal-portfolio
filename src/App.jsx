@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import LoadingScreen from './components/LoadingScreen.jsx';
 import Cursor from './components/Cursor.jsx';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
@@ -79,6 +80,23 @@ function MainPortfolio({ openPalette }) {
   );
 }
 
+function AppRoutes() {
+  const [loaded, setLoaded] = useState(false);
+  const { pathname } = useLocation();
+  const showLoader = !loaded && pathname === '/';
+
+  return (
+    <>
+      {showLoader && <LoadingScreen onDone={() => setLoaded(true)} />}
+      <Routes>
+        <Route path="/" element={<MainPortfolio />} />
+        <Route path="/work/:id" element={<ProjectPage />} />
+        <Route path="/career/:id" element={<ExperiencePage />} />
+      </Routes>
+    </>
+  );
+}
+
 export default function App() {
   useEffect(() => {
     const stored = localStorage.getItem("theme");
@@ -88,11 +106,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Cursor />
-      <Routes>
-        <Route path="/" element={<MainPortfolio />} />
-        <Route path="/work/:id" element={<ProjectPage />} />
-        <Route path="/career/:id" element={<ExperiencePage />} />
-      </Routes>
+      <AppRoutes />
     </BrowserRouter>
   );
 }
