@@ -161,11 +161,13 @@ export default function Hero({ openPalette }) {
       }}>
         <PixelMark cell={2.5} gap={0.5} />
         <nav role="navigation" aria-label="Main navigation" className="hero-nav-links" style={{ display: "flex", gap: 24, alignItems: "center" }}>
-          {[["work","#work"],["about","#about"],["résumé","#career"],["contact","#contact"]].map(([l,h]) => (
-            <a key={l} href={h} className="hover-line mono" style={{
-              fontSize: 11, color: "var(--muted-2)", textDecoration: "none",
-              letterSpacing: "0.08em", textTransform: "uppercase",
-            }}>{l}</a>
+          {[["work","#work"],["about","#about"],["résumé",RESUME_LINK],["contact","#contact"]].map(([l,h]) => (
+            <a key={l} href={h} className="hover-line mono"
+              {...(h.startsWith("http") ? { target: "_blank", rel: "noreferrer" } : {})}
+              style={{
+                fontSize: 11, color: "var(--muted-2)", textDecoration: "none",
+                letterSpacing: "0.08em", textTransform: "uppercase",
+              }}>{l}</a>
           ))}
           <button onClick={openPalette} aria-label="Open command palette" className="mono kbd-btn">⌘ K</button>
         </nav>
@@ -198,9 +200,10 @@ export default function Hero({ openPalette }) {
             }}
           >✕</button>
           <nav role="navigation" aria-label="Mobile navigation" style={{ display: "flex", flexDirection: "column", gap: 0, width: "100%" }}>
-            {[["work","#work"],["about","#about"],["résumé","#career"],["contact","#contact"]].map(([l,h]) => (
+            {[["work","#work"],["about","#about"],["résumé",RESUME_LINK],["contact","#contact"]].map(([l,h]) => (
               <a key={l} href={h}
                 onClick={() => setMenuOpen(false)}
+                {...(h.startsWith("http") ? { target: "_blank", rel: "noreferrer" } : {})}
                 className="mono"
                 style={{
                   fontSize: 40, color: "var(--fg)", textDecoration: "none",
