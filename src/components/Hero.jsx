@@ -1,6 +1,29 @@
 import { useState, useEffect } from 'react';
 import { PixelMark } from './Logo.jsx';
 
+const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$!';
+const rand  = () => CHARS[Math.floor(Math.random() * CHARS.length)];
+
+function useScramble(text, { delay = 0, duration = 900 } = {}) {
+  const [display, setDisplay] = useState(() => text.replace(/[^ ]/g, rand));
+  useEffect(() => {
+    let raf, t0 = null;
+    const step = (ts) => {
+      if (t0 === null) t0 = ts;
+      const elapsed = ts - t0;
+      if (elapsed < delay) { raf = requestAnimationFrame(step); return; }
+      const progress = Math.min((elapsed - delay) / duration, 1);
+      const fixed = Math.floor(progress * text.length);
+      setDisplay(text.split('').map((ch, i) => ch === ' ' ? ' ' : i < fixed ? ch : rand()).join(''));
+      if (progress < 1) raf = requestAnimationFrame(step);
+      else setDisplay(text);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, [text, delay, duration]);
+  return display;
+}
+
 const isEUVisitor = Intl.DateTimeFormat().resolvedOptions().timeZone.startsWith("Europe/");
 const RESUME_ID   = "1N0boS_DsTKJhfFVKdaff1DoKma-nHsWc";
 const RESUME_PREVIEW  = `https://drive.google.com/file/d/${RESUME_ID}/preview`;
@@ -116,6 +139,8 @@ export default function Hero({ openPalette }) {
   const [typed, setTyped]           = useState("");
   const [resumeOpen, setResumeOpen] = useState(false);
   const [menuOpen, setMenuOpen]     = useState(false);
+  const scrambleAshish = useScramble("Ashish", { duration: 900 });
+  const scrambleSoni   = useScramble("Soni",   { delay: 220, duration: 800 });
 
   useEffect(() => {
     const phrases = [
@@ -242,8 +267,8 @@ export default function Hero({ openPalette }) {
           lineHeight: 0.94, letterSpacing: "-0.045em",
           fontWeight: 500, margin: 0, marginBottom: 36, color: "var(--fg)",
         }}>
-          Ashish<br />
-          <span className="serif" style={{ color: "var(--accent)", fontWeight: 400 }}>Soni</span>—a{" "}
+          {scrambleAshish}<br />
+          <span className="serif" style={{ color: "var(--accent)", fontWeight: 400 }}>{scrambleSoni}</span>—a{" "}
           <span className="serif h1-strike" style={{ color: "var(--muted)", fontStyle: "italic", fontWeight: 400 }}>frontend&nbsp;dev,</span><br />
           <span className="serif" style={{ color: "var(--accent)", fontWeight: 400, fontStyle: "italic" }}>problem solver.</span>
         </h1>
