@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { PixelMark } from './Logo.jsx';
 
 const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const rand  = () => CHARS[Math.floor(Math.random() * CHARS.length)];
@@ -63,6 +64,8 @@ export default function LoadingScreen({ onDone }) {
       transition: 'opacity 480ms cubic-bezier(0.4,0,0.2,1)',
       pointerEvents: fading ? 'none' : 'all',
     }}>
+      <PixelMark cell={10} gap={2.5} style={{ marginBottom: 36, opacity: 0.9 }} />
+
       <div style={{
         fontSize: 'clamp(52px, 11vw, 100px)',
         lineHeight: 0.92,
