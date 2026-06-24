@@ -1,0 +1,33 @@
+src/components/Hero.jsx
+  s_8638066526025b::t_e0518283af7346 164-170
+  s_8638066526025b::t_5f17267fb178a0 203,206
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "3f7f2193cf96bdd4c782cd4aae25aa86e56f1a19",
+  "prompts": {
+    "4fff206387b5874f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c2accabf-d280-4d86-a336-f3235873a33e",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Ashish Soni <ashishsoni2002@gmail.com>",
+      "total_additions": 1974,
+      "total_deletions": 434,
+      "accepted_lines": 1792,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_8638066526025b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d6f9f3d8-54bf-4353-a3ec-2797d48c8dd4",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Ashish Soni <ashishsoni2002@gmail.com>"
+    }
+  }
+}
