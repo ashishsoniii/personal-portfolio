@@ -1,0 +1,20 @@
+src/components/LoadingScreen.jsx
+  s_8638066526025b::t_5278a41cb5a336 67-68
+  s_8638066526025b::t_e8fb8a4d7c62f9 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "d2369293b499547c51980a6a2b733f5b40ba5653",
+  "prompts": {},
+  "sessions": {
+    "s_8638066526025b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d6f9f3d8-54bf-4353-a3ec-2797d48c8dd4",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Ashish Soni <ashishsoni2002@gmail.com>"
+    }
+  }
+}
